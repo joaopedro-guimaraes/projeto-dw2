@@ -3,21 +3,40 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "dw2": {
+    "projeto-dw2": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
       "prefix": "app",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "sass"
+          "styleext": "scss",
+          "spec": false
+        },
+        "@schematics/angular:class": {
+          "spec": false
+        },
+        "@schematics/angular:directive": {
+          "spec": false
+        },
+        "@schematics/angular:guard": {
+          "spec": false
+        },
+        "@schematics/angular:module": {
+          "spec": false
+        },
+        "@schematics/angular:pipe": {
+          "spec": false
+        },
+        "@schematics/angular:service": {
+          "spec": false
         }
       },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/dw2",
+            "outputPath": "dist/projeto-dw2",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -27,10 +46,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.sass"
+              "src/styles.scss"
             ],
-            "scripts": [],
-            "es5BrowserSupport": true
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -48,32 +66,25 @@
               "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
-              "buildOptimizer": true,
-              "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "2mb",
-                  "maximumError": "5mb"
-                }
-              ]
+              "buildOptimizer": true
             }
           }
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "dw2:build"
+            "browserTarget": "projeto-dw2:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "dw2:build:production"
+              "browserTarget": "projeto-dw2:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "dw2:build"
+            "browserTarget": "projeto-dw2:build"
           }
         },
         "test": {
@@ -84,7 +95,7 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-              "src/styles.sass"
+              "src/styles.scss"
             ],
             "scripts": [],
             "assets": [
@@ -107,20 +118,19 @@
         }
       }
     },
-    "dw2-e2e": {
+    "projeto-dw2-e2e": {
       "root": "e2e/",
       "projectType": "application",
-      "prefix": "",
       "architect": {
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "dw2:serve"
+            "devServerTarget": "projeto-dw2:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "dw2:serve:production"
+              "devServerTarget": "projeto-dw2:serve:production"
             }
           }
         },
@@ -136,5 +146,5 @@
       }
     }
   },
-  "defaultProject": "dw2"
+  "defaultProject": "projeto-dw2"
 }
