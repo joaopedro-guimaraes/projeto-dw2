@@ -1,34 +1,34 @@
 package org.dw2Backend.controller.User;
 
 import org.dw2Backend.entity.User;
-import org.dw2Backend.mapper.UserMapper;
+import org.dw2Backend.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpSession;
 
-@Controller
+@RestController
 @RequestMapping(value = "/login")
 public class LoginController {
 
-    private UserMapper userMapper;
+    private UserService userService;
 
     @Autowired
-    public LoginController(UserMapper userMapper){
-        this.userMapper = userMapper;
+    public LoginController(UserService userService){
+        this.userService = userService;
     }
 
     public LoginController() {}
 
     @Transactional
-    @RequestMapping(value = "/autenticar", method = RequestMethod.POST)
-    public ModelAndView Login(User user, HttpSession session){
+    @PostMapping
+    @RequestMapping(value = "/autenticar")
+    public ModelAndView Login(@Validated @RequestBody User user, HttpSession session){
 
-        if(userMapper.Authenticate(user)) {
+        if(userService.Authenticate(user)) {
             String messageSuccess = "Welcome!! Usuário logado com sucesso.";
             session.setAttribute("user", user.getUsername());
             session.setAttribute("email", user.getEmail());

@@ -33,7 +33,7 @@
 
     </br></br>
     <h2>Listar Cadastros</h2>
-    <form action="/list/controller" method="post">
+    <form action="/list/controller" method="get">
         </br>
         <input type="submit" value="Listar">
     </form>
