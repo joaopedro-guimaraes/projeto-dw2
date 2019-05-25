@@ -1,6 +1,7 @@
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { CollapseModule } from 'ngx-bootstrap/collapse';
 
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
@@ -12,7 +13,7 @@ import { MainComponent } from './main/main.component';
   declarations: [HomeComponent, MenuComponent, MainComponent],
   imports: [
     CommonModule,
-    NgbModule.forRoot(),
+    CollapseModule.forRoot(),
     HomeRoutingModule
   ]
 })
