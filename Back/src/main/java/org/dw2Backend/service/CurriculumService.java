@@ -19,10 +19,6 @@ public class CurriculumService {
 
     public CurriculumService() {}
 
-    public boolean Authenticate(Curriculum curriculum){
-        return curriculumMapper.Authenticate(curriculum);
-    }
-
     public List<Curriculum> SearchAll() {
         return curriculumMapper.SearchAll();
     }
@@ -31,11 +27,11 @@ public class CurriculumService {
         return curriculumMapper.SearchById(id);
     }
 
-    public boolean Save(Curriculum user) {
+    public boolean Save(Curriculum curriculum) {
         return curriculumMapper.Save(curriculum);
     }
 
-    public boolean Update(Curriculum user) {
+    public boolean Update(Curriculum curriculum) {
         return curriculumMapper.Update(curriculum);
     }
 
