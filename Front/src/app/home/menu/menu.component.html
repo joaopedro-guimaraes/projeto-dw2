@@ -1,15 +1,24 @@
-<nav class="navbar">
-  <a class="navbar-brand text-center" href="">Projeto DW2</a>
-
-  <div class="my-3 align-items-center">
-    <i class="fas fa-user"></i><p class="pl-2 d-inline">Nome usuario</p>
-    <hr>
-  </div>
-
+<nav class="navbar d-flex justify-content-center">
   <div class="nav flex-column">
-    <a class="nav-link active my-2" href="#">Exemplo 1</a>
-    <a class="nav-link active my-2" href="#">Exemplo 2</a>
-    <a class="nav-link active my-2" href="#">Exemplo 3</a>
-    <a class="nav-link active my-2" href="#">Exemplo 4</a>
+    <a class="navbar-brand text-center" href="">Projeto DW2</a>
+
+    <div class="my-3 align-items-center">
+      <i class="fas fa-user"></i>
+      <p class="pl-2 d-inline">Nome usuario</p>
+      <hr />
+    </div>
+    <div class="mt-2">
+      <div (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseBasic">
+        <p class="d-inline">Aluno</p><i class="fas pl-2" [ngClass]="(isCollapsed) ? 'fa-chevron-down' : 'fa-chevron-up'"></i>
+      </div>
+      <div id="collapseBasic" [collapse]="isCollapsed">
+        <a class="nav-link active" [routerLink]="['aluno']">Curriculo</a>
+        <a class="nav-link active">Vagas</a>
+        <a class="nav-link active" [routerLink]="['aluno/cadastro']">Cadastro</a>
+        <a class="nav-link active">Relatórios</a>
+      </div>
+    </div>
+    <a class="nav-link active my-2">Exemplo 3</a>
+    <a class="nav-link active my-2">Exemplo 4</a>
   </div>
 </nav>
