@@ -14,23 +14,30 @@ public class UserMapper {
 
     public UserMapper(){}
 
-    public boolean Insert(User user) {
-        try {
-            manager.persist(user);
-            return true;
-        } catch (Exception e){
-            return false;
-        }
-    }
-
-    public List<User> FindAll() {
+    public List<User> SearchAll() {
         List<User> users = null;
 
         try {
             Query query = manager.createQuery("select u from User u");
             users = query.getResultList();
             return users;
-        } catch (Exception e){
+        } catch (NoResultException e){
+            return users;
+        }
+    }
+
+    public List<User> SearchById(int id) {
+        List<User> users = null;
+
+        String command = "select u from User u where u.idUser=?1";
+        Query query = manager.createQuery(command);
+
+        query.setParameter(1, id);
+
+        try {
+            users = query.getResultList();
+            return users;
+        } catch (NoResultException e) {
             return users;
         }
     }
@@ -50,6 +57,33 @@ public class UserMapper {
             query.getSingleResult();
             return true;
         } catch (NoResultException e) {
+            return false;
+        }
+    }
+
+    public boolean Save(User user) {
+        try {
+            manager.persist(user);
+            return true;
+        } catch (Exception e){
+            return false;
+        }
+    }
+
+    public boolean Update(User user) {
+        try {
+            manager.merge(user);
+            return true;
+        } catch (Exception e){
+            return false;
+        }
+    }
+
+    public boolean Delete(User user) {
+        try {
+            manager.remove(user);
+            return true;
+        } catch (Exception e){
             return false;
         }
     }

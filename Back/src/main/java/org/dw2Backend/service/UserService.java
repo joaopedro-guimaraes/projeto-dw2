@@ -6,6 +6,8 @@ import org.dw2Backend.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class UserService {
 
@@ -20,5 +22,25 @@ public class UserService {
 
     public boolean Authenticate(User user){
         return userMapper.Authenticate(user);
+    }
+
+    public List<User> SearchAll() {
+        return userMapper.SearchAll();
+    }
+
+    public List<User> SearchById(int id) {
+        return userMapper.SearchById(id);
+    }
+
+    public boolean Save(User user) {
+        return userMapper.Save(user);
+    }
+
+    public boolean Update(User user) {
+        return userMapper.Update(user);
+    }
+
+    public boolean Delete(User user) {
+        return userMapper.Delete(user);
     }
 }

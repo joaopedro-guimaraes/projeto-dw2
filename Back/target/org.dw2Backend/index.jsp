@@ -12,7 +12,7 @@
 </head>
 <body>
     <h2>Logar no Sistema</h2>
-    <form action="/login/autenticar" method="post">
+    <form action="/login" method="post">
         Login: <input type="text" name="email"><br/>
         Senha: <input type="password" name="password">
 
@@ -22,7 +22,7 @@
 
     </br></br>
     <h2>Cadastrar-se no Sistema</h2>
-    <form action="/register/controller" method="post">
+    <form action="/usuario" method="post">
         Login: <input type="text" name="username"><br/>
         e-MAIL: <input type="text" name="email"><br/>
         Senha: <input type="password" name="password">
@@ -33,7 +33,7 @@
 
     </br></br>
     <h2>Listar Cadastros</h2>
-    <form action="/list/controller" method="get">
+    <form action="/usuario" method="get">
         </br>
         <input type="submit" value="Listar">
     </form>

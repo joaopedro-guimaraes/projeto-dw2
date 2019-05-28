@@ -19,14 +19,24 @@ public class User {
 
     @Column(nullable = false)
     private String password;
+
+    @Column(nullable = false)
+    private String userType;
     //</editor-fold>
 
     //<editor-fold desc="Builders">
     ////////////////////////////////
-    public User(String username, String email, String password) {
+    public User(
+                int idUser
+                ,String username
+                , String email
+                , String password
+                , String userType) {
+        this.idUser = idUser;
         this.username = username;
         this.email = email;
         this.password = password;
+        this.userType = userType;
     }
 
     public User(){ }
@@ -34,6 +44,14 @@ public class User {
 
     //<editor-fold desc="Properties">
     ////////////////////////////////
+    public int getIdUser() {
+        return idUser;
+    }
+
+    public void setIdUser(int idUser) {
+        this.idUser = idUser;
+    }
+
     public String getUsername() {
         return username;
     }
@@ -53,10 +71,19 @@ public class User {
     public void setPassword(String password) {
         this.password = password;
     }
+
+    public String getUserType() {
+        return userType;
+    }
+
+    public void setUserType(String userType) {
+        this.userType = userType;
+    }
     //</editor-fold>
 
     //<editor-fold desc="toStrings">
     ////////////////////////////////
+
     @Override
     public String toString() {
         return "User{" +
@@ -64,7 +91,9 @@ public class User {
                 ", username='" + username + '\'' +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
+                ", userType='" + userType + '\'' +
                 '}';
     }
+
     //</editor-fold>
 }
