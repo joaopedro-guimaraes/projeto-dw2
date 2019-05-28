@@ -4,15 +4,18 @@ import org.dw2Backend.entity.User;
 import org.dw2Backend.service.UserService;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.context.WebApplicationContext;
 
 import javax.servlet.http.HttpSession;
 import java.util.List;
 
 @RestController
+@Scope(value= WebApplicationContext.SCOPE_REQUEST)
 public class UserController {
 
     private UserService userService;
@@ -27,13 +30,13 @@ public class UserController {
     @GetMapping(value = "/usuario")
     public ResponseEntity<List<User>> SearchAll(){
 
-        List<User> users = this.userService.SearchAll();
+        List<User> userList = this.userService.SearchAll();
 
-        if(users.isEmpty()){
+        if(userList.isEmpty()){
             return new ResponseEntity(HttpStatus.NO_CONTENT);
         }
 
-        return new ResponseEntity(users, HttpStatus.OK);
+        return new ResponseEntity(userList, HttpStatus.OK);
     }
 
     @GetMapping(value = "/usuario/{id}")
