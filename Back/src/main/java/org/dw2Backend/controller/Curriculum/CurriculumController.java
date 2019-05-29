@@ -1,19 +1,16 @@
 package org.dw2Backend.controller.Curriculum;
 
 import org.dw2Backend.entity.Curriculum;
-import org.dw2Backend.entity.User;
-
 import org.dw2Backend.service.CurriculumService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.context.WebApplicationContext;
 
-import javax.servlet.http.HttpSession;
 import java.util.List;
 
 @RestController
@@ -27,11 +24,10 @@ public class CurriculumController {
         this.curriculumService = curriculumService;
     }
 
-    public CurriculumController(){}
+    public CurriculumController() {}
 
     @GetMapping(value = "/curriculum")
     public ResponseEntity<List<Curriculum>> SearchAll(){
-
         List<Curriculum> curriculumList = this.curriculumService.SearchAll();
 
         if(curriculumList.isEmpty()){
@@ -54,8 +50,8 @@ public class CurriculumController {
     }
 
     @Transactional
-    @PostMapping(value = "/usuario")
-    public ResponseEntity Register(@RequestBody Curriculum curriculum, HttpSession session){
+    @PostMapping(value = "/curriculum")
+    public ResponseEntity Register(@RequestBody Curriculum curriculum){
 
         if(curriculumService.Save(curriculum)){
             return new ResponseEntity(HttpStatus.OK);
@@ -66,7 +62,7 @@ public class CurriculumController {
 
     @Transactional
     @PutMapping(value = "/curriculum")
-    public ResponseEntity Update(@RequestBody Curriculum curriculum, HttpSession session){
+    public ResponseEntity Update(@RequestBody Curriculum curriculum){
 
         if(curriculumService.Update(curriculum)){
             return new ResponseEntity(HttpStatus.OK);
@@ -80,7 +76,6 @@ public class CurriculumController {
     public ResponseEntity Delete(@RequestBody Curriculum curriculum){
 
         if(curriculumService.Delete(curriculum)){
-
             return new ResponseEntity(HttpStatus.OK);
         }
 

@@ -6,212 +6,245 @@
 	},
 	"item": [
 		{
-			"name": "CADASTRAR USUÁRIO",
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"name": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"username\": \"Manoela\",\n    \"email\": \"Manoela@gmail.com\",\n    \"password\": \"ManuMuitoFofa\"\n}"
-				},
-				"url": {
-					"raw": "http://localhost:8080/usuario/",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"usuario",
-						""
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "BUSCAR CEP",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "viacep.com.br/ws/13560049/json/",
-					"host": [
-						"viacep",
-						"com",
-						"br"
-					],
-					"path": [
-						"ws",
-						"13560049",
-						"json",
-						""
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "LOGIN",
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"name": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"email\": \"kaleo@email.com\",\n    \"password\": \"12547\"\n}"
-				},
-				"url": {
-					"raw": "http://localhost:8080/login",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"login"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "BUSCAR LISTA DE USUÁRIOS",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
-				"url": {
-					"raw": "http://localhost:8080/usuario",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"usuario"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "BUSCAR USUÁRIO PELO ID",
-			"request": {
-				"method": "GET",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"url": {
-					"raw": "http://localhost:8080/usuario/3",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"usuario",
-						"3"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "ATUALIZAR USUÁRIO",
-			"request": {
-				"method": "PUT",
-				"header": [
-					{
-						"key": "Content-Type",
-						"name": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n\t\"idUser\": 20,\n    \"username\": \"Manoela\",\n    \"email\": \"Manoela@gmail.com\",\n    \"password\": \"deu Certo?\"\n}"
-				},
-				"url": {
-					"raw": "http://localhost:8080/usuario/",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"usuario",
-						""
-					],
-					"query": [
-						{
-							"key": "",
-							"value": ""
+			"name": "USUÁRIO",
+			"item": [
+				{
+					"name": "CADASTRAR USUÁRIO",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"NOVAMENTE\",\n    \"email\": \"Manoela@gmail.com\",\n    \"password\": \"ManuMuitoFofa\",\n    \"userType\": \"Aluno\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/usuario/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuario",
+								""
+							]
 						}
-					]
+					},
+					"response": []
+				},
+				{
+					"name": "LOGIN",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"Manoela@hotmail.com\",\n    \"password\": \"ManuMuitoFofa\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BUSCAR LISTA DE USUÁRIOS",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/usuario/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuario",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BUSCAR USUÁRIO PELO ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/usuario/22",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuario",
+								"22"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ATUALIZAR USUÁRIO",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"idUser\": 22,\n    \"username\": \"NOVAMENTE\",\n    \"email\": \"Manoela@hotmail.com\",\n    \"password\": \"ManuMuitoFofa\",\n    \"userType\": \"Supervisor\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/usuario/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuario",
+								""
+							],
+							"query": [
+								{
+									"key": "",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EXCLUIR USUÁRIO",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"idUser\": 22,\n    \"username\": \"NOVAMENTE\",\n    \"email\": \"Manoela@gmail.com\",\n    \"password\": \"ManuMuitoFofa\",\n    \"userType\": \"Empresa\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/usuario/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuario",
+								""
+							],
+							"query": [
+								{
+									"key": "",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		},
 		{
-			"name": "EXCLUIR USUÁRIO",
-			"request": {
-				"method": "DELETE",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"idUser\": 1,\n    \"username\": \"Brayan\",\n    \"email\": \"brayan.m.goncalves@gmail.com\",\n    \"password\": \"123\"\n}"
-				},
-				"url": {
-					"raw": "http://localhost:8080/usuario/",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"usuario",
-						""
-					],
-					"query": [
-						{
-							"key": "",
-							"value": ""
+			"name": "UTILITÁRIOS",
+			"item": [
+				{
+					"name": "BUSCAR CEP",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "viacep.com.br/ws/13560049/json/",
+							"host": [
+								"viacep",
+								"com",
+								"br"
+							],
+							"path": [
+								"ws",
+								"13560049",
+								"json",
+								""
+							]
 						}
-					]
+					},
+					"response": []
 				}
-			},
-			"response": []
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "c63fe164-e337-4027-ab80-1ba662859246",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "bdd45ece-7346-49fe-b1c1-473d5f5fff64",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
 		}
 	]
 }

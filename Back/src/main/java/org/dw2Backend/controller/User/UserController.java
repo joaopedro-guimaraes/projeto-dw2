@@ -5,13 +5,12 @@ import org.dw2Backend.service.UserService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.context.WebApplicationContext;
 
-import javax.servlet.http.HttpSession;
 import java.util.List;
 
 @RestController
@@ -42,23 +41,20 @@ public class UserController {
     @GetMapping(value = "/usuario/{id}")
     public ResponseEntity<List<User>> SearchById(@PathVariable int id){
 
-        List<User> users = this.userService.SearchById(id);
+        List<User> userList = this.userService.SearchById(id);
 
-        if(users.isEmpty()){
+        if(userList.isEmpty()){
             return new ResponseEntity(HttpStatus.NOT_FOUND);
         }
 
-        return new ResponseEntity(users, HttpStatus.OK);
+        return new ResponseEntity(userList, HttpStatus.OK);
     }
 
     @Transactional
     @PostMapping(value = "/usuario")
-    public ResponseEntity Register(@RequestBody User user, HttpSession session){
+    public ResponseEntity Register(@RequestBody User user){
 
         if(userService.Save(user)){
-            session.setAttribute("user", user.getUsername());
-            session.setAttribute("email", user.getEmail());
-
             return new ResponseEntity(HttpStatus.OK);
         }
 
@@ -67,12 +63,9 @@ public class UserController {
 
     @Transactional
     @PutMapping(value = "/usuario")
-    public ResponseEntity Update(@RequestBody User user, HttpSession session){
+    public ResponseEntity Update(@RequestBody User user){
 
         if(userService.Update(user)){
-            session.setAttribute("user", user.getUsername());
-            session.setAttribute("email", user.getEmail());
-
             return new ResponseEntity(HttpStatus.OK);
         }
 
@@ -84,7 +77,6 @@ public class UserController {
     public ResponseEntity Delete(@RequestBody User user){
 
         if(userService.Delete(user)){
-
             return new ResponseEntity(HttpStatus.OK);
         }
 
