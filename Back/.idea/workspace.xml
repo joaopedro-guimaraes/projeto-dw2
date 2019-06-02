@@ -8,55 +8,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d95db05-f08a-4b25-ab5e-5721489f31f9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/dw2Backend/DTO/Internship/InternshipCompanyDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/dw2Backend/controller/Company/CompanyController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/dw2Backend/controller/Internship/InternshipController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/dw2Backend/mapper/CompanyMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/dw2Backend/mapper/InternshipMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/dw2Backend/service/CompanyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/dw2Backend/service/InternshipService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/dw2Backend/DTO/Internship/InternshipCompanyDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/dw2Backend/controller/Company/CompanyController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/dw2Backend/controller/Internship/InternshipController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/dw2Backend/mapper/CompanyMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/dw2Backend/mapper/InternshipMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/dw2Backend/service/CompanyService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/dw2Backend/service/InternshipService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/DTO/Internship/InternshipCompanyDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/controller/Company/CompanyController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/controller/Internship/InternshipController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/mapper/CompanyMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/mapper/InternshipMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/service/CompanyService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/service/InternshipService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/dw2Backend/entity/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dw2Backend/entity/Company.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/dw2Backend/entity/Curriculum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dw2Backend/entity/Curriculum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/dw2Backend/entity/Internship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dw2Backend/entity/Internship.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/dw2Backend/entity/ProfessionalExperience.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dw2Backend/entity/ProfessionalExperience.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/dw2Backend/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dw2Backend/entity/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/dw2Backend/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dw2Backend/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/dw2Backend/controller/Curriculum/CurriculumController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/dw2Backend/controller/Curriculum/CurriculumController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/dw2Backend/controller/User/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/dw2Backend/controller/User/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/dw2Backend/entity/Company.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/dw2Backend/entity/Company.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/dw2Backend/entity/Curriculum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/dw2Backend/entity/Curriculum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/dw2Backend/entity/Internship.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/dw2Backend/entity/Internship.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/dw2Backend/entity/ProfessionalExperience.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/dw2Backend/entity/ProfessionalExperience.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/dw2Backend/entity/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/dw2Backend/entity/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/dw2Backend/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/dw2Backend/mapper/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/org.dw2Backend.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/controller/Curriculum/CurriculumController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/controller/Curriculum/CurriculumController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/controller/User/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/controller/User/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/entity/Company.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/entity/Company.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/entity/Curriculum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/entity/Curriculum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/entity/Internship.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/entity/Internship.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/entity/ProfessionalExperience.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/entity/ProfessionalExperience.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/entity/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/entity/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/mapper/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hsqldb-2.4.1/hsqldb/data/jpatable.lck" beforeDir="false" afterPath="$PROJECT_DIR$/../hsqldb-2.4.1/hsqldb/data/jpatable.lck" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hsqldb-2.4.1/hsqldb/data/jpatable.log" beforeDir="false" afterPath="$PROJECT_DIR$/../hsqldb-2.4.1/hsqldb/data/jpatable.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hsqldb-2.4.1/hsqldb/data/jpatable.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../hsqldb-2.4.1/hsqldb/data/jpatable.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hsqldb-2.4.1/hsqldb/data/jpatable.script" beforeDir="false" afterPath="$PROJECT_DIR$/../hsqldb-2.4.1/hsqldb/data/jpatable.script" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -303,7 +255,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="793" />
     <option name="width" value="814" />
     <option name="height" value="877" />
@@ -449,7 +401,7 @@
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="dw2backend" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559449637684" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559449714662" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -715,12 +667,12 @@
       <workItem from="1559254575177" duration="315000" />
       <workItem from="1559254911050" duration="645000" />
       <workItem from="1559256781058" duration="17380000" />
-      <workItem from="1559366331360" duration="9253000" />
+      <workItem from="1559366331360" duration="9660000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="222074000" />
+    <option name="totallyTimeSpent" value="222481000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
