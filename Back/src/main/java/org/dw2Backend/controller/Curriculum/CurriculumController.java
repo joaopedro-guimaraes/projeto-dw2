@@ -1,6 +1,5 @@
 package org.dw2Backend.controller.Curriculum;
 
-import org.dw2Backend.DTO.Curriculum.CurriculumStudentDTO;
 import org.dw2Backend.entity.Curriculum;
 import org.dw2Backend.service.CurriculumService;
 
@@ -27,7 +26,7 @@ public class CurriculumController {
 
     public CurriculumController() {}
 
-    @GetMapping(value = "/curriculo")
+    @GetMapping(value = "/curriculum")
     public ResponseEntity<List<Curriculum>> SearchAll(){
         List<Curriculum> curriculumList = this.curriculumService.SearchAll();
 
@@ -38,7 +37,7 @@ public class CurriculumController {
         return new ResponseEntity(curriculumList, HttpStatus.OK);
     }
 
-    @GetMapping(value = "/curriculo/{id}")
+    @GetMapping(value = "/curriculum/{id}")
     public ResponseEntity<List<Curriculum>> SearchById(@PathVariable int id){
 
         List<Curriculum> curriculumList = this.curriculumService.SearchById(id);
@@ -51,10 +50,10 @@ public class CurriculumController {
     }
 
     @Transactional
-    @PostMapping(value = "/curriculo")
-    public ResponseEntity Register(@RequestBody CurriculumStudentDTO objDTO){
+    @PostMapping(value = "/curriculum")
+    public ResponseEntity Register(@RequestBody Curriculum curriculum){
 
-        if(curriculumService.Save(objDTO)){
+        if(curriculumService.Save(curriculum)){
             return new ResponseEntity(HttpStatus.OK);
         }
 
@@ -62,7 +61,7 @@ public class CurriculumController {
     }
 
     @Transactional
-    @PutMapping(value = "/curriculo")
+    @PutMapping(value = "/curriculum")
     public ResponseEntity Update(@RequestBody Curriculum curriculum){
 
         if(curriculumService.Update(curriculum)){
@@ -73,7 +72,7 @@ public class CurriculumController {
     }
 
     @Transactional
-    @DeleteMapping(value = "/curriculo")
+    @DeleteMapping(value = "/curriculum")
     public ResponseEntity Delete(@RequestBody Curriculum curriculum){
 
         if(curriculumService.Delete(curriculum)){

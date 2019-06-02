@@ -1,6 +1,7 @@
 package org.dw2Backend.entity;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -15,10 +16,10 @@ public class Curriculum {
     @Column
     private int identification;
 
-    @OneToMany
+    @ManyToMany
     private List<AcademicFormation> academicFormationList;
 
-    @OneToMany
+    @ManyToMany
     private List<ProfessionalExperience> professionalExperienceList;
     //</editor-fold>
 

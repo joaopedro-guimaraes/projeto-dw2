@@ -1,6 +1,5 @@
 package org.dw2Backend.service;
 
-import org.dw2Backend.DTO.Curriculum.CurriculumStudentDTO;
 import org.dw2Backend.entity.Curriculum;
 import org.dw2Backend.mapper.CurriculumMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,8 +27,8 @@ public class CurriculumService {
         return curriculumMapper.SearchById(id);
     }
 
-    public boolean Save(CurriculumStudentDTO objDTO) {
-        return curriculumMapper.Save(objDTO);
+    public boolean Save(Curriculum curriculum) {
+        return curriculumMapper.Save(curriculum);
     }
 
     public boolean Update(Curriculum curriculum) {

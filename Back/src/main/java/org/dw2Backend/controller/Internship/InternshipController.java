@@ -38,7 +38,6 @@ public class InternshipController {
 
         for (Internship internship: internshipList) {
             Company company = internship.getCompany();
-            company.setUserCompany(null);
             company.setInternshipList(null);
         }
 
@@ -58,7 +57,6 @@ public class InternshipController {
 
         for (Internship internship: internshipList) {
             Company company = internship.getCompany();
-            company.setUserCompany(null);
             company.setInternshipList(null);
         }
 
