@@ -52,10 +52,10 @@ public class UserController {
 
     @Transactional
     @PostMapping(value = "/usuario")
-    public ResponseEntity Register(@RequestBody User user){
+    public ResponseEntity<User> Register(@RequestBody User user){
 
-        if(userService.Save(user)){
-            return new ResponseEntity(HttpStatus.OK);
+        if((userService.Save(user)) != null){
+            return new ResponseEntity(user, HttpStatus.OK);
         }
 
         return new ResponseEntity(HttpStatus.BAD_REQUEST);

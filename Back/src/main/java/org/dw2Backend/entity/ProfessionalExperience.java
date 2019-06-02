@@ -12,19 +12,19 @@ public class ProfessionalExperience {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idProfessionalExperience;
 
-    @Column(nullable = false)
+    @Column
     private String company;
 
-    @Column(nullable = false)
+    @Column
     private String function;
 
-    @Column(nullable = false)
+    @Column
     private Date dateAdmission;
 
-    @Column(nullable = false)
+    @Column
     private Date dateDemission;
 
-    @Column(nullable = false)
+    @Column
     private String executeTasks;
     //</editor-fold>
 

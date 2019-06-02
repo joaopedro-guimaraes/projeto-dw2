@@ -2,6 +2,7 @@ package org.dw2Backend.entity;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 public class Student {
@@ -15,43 +16,49 @@ public class Student {
     @OneToOne
     private User userStudent;
 
-    @OneToOne
-    private Internship internship;
+    /*@ManyToMany
+    @JoinTable(name = "student_internship",
+            joinColumns =
+                @JoinColumn(name = "idStudent"),
+            inverseJoinColumns =
+                @JoinColumn(name = "idInternship"))
+    private List<Internship> internshipList;*/
 
     @OneToOne
     private Curriculum curriculum;
 
-    @Column(nullable = false)
+    @Column
     private String register;
 
-    @Column(nullable = false)
+    @Column
     private String name;
 
-    @Column(nullable = false)
+    @Column
     private String address;
 
-    @Column(nullable = false)
+    @Column
     private int number;
 
-    @Column(nullable = false)
+    @Column
     private String city;
 
-    @Column(nullable = false)
+    @Column
     private String neighborhood;
 
-    @Column(nullable = false)
+    @Column
     private String state;
 
-    @Column(nullable = false)
+    @Column
     private String cep;
 
-    @Column(nullable = false)
+    @Column
     private String telephone;
 
-    @Column(nullable = false)
+    @Column
     private String course;
 
-    @Column(nullable = false)
+    @Column
+    @Temporal(TemporalType.DATE)
     private Date dataIngresso;
     //</editor-fold>
 

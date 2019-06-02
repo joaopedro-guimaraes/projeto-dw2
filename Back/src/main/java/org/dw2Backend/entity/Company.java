@@ -1,7 +1,6 @@
 package org.dw2Backend.entity;
 
 import javax.persistence.*;
-import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -16,40 +15,37 @@ public class Company {
     @OneToOne
     private User userCompany;
 
-    @ManyToMany
-    private List<Internship> internshipList = new ArrayList<Internship>();
+    @OneToMany(cascade = CascadeType.ALL , mappedBy = "company", fetch=FetchType.EAGER)
+    private List<Internship> internshipList;
 
-    @Column(nullable = false)
+    @Column
     private String CNPJ;
 
-    @Column(nullable = false)
+    @Column
     private String companyName;
 
-    @Column(nullable = false)
-    private String requisitosDesejaveis;
-
-    @Column(nullable = false)
+    @Column
     private String address;
 
-    @Column(nullable = false)
+    @Column
     private int number;
 
-    @Column(nullable = false)
+    @Column
     private String city;
 
-    @Column(nullable = false)
+    @Column
     private String neighborhood;
 
-    @Column(nullable = false)
+    @Column
     private String state;
 
-    @Column(nullable = false)
+    @Column
     private String cep;
 
-    @Column(nullable = false)
+    @Column
     private String telephone;
 
-    @Column(nullable = false)
+    @Column
     private String responsible;
     //</editor-fold>
 
@@ -59,9 +55,10 @@ public class Company {
     public Company(
                     int idCompany
                     ,User userCompany
+                    ,List<Internship> internshipList
                     , String CNPJ
                     , String companyName
-                    , String requisitosDesejaveis
+                    , String desirableRequirements
                     , String address
                     , int number
                     , String city
@@ -72,9 +69,9 @@ public class Company {
                     , String responsible) {
         this.idCompany = idCompany;
         this.userCompany = userCompany;
+        this.internshipList = internshipList;
         this.CNPJ = CNPJ;
         this.companyName = companyName;
-        this.requisitosDesejaveis = requisitosDesejaveis;
         this.address = address;
         this.number = number;
         this.city = city;
@@ -129,14 +126,6 @@ public class Company {
 
     public void setCompanyName(String companyName) {
         this.companyName = companyName;
-    }
-
-    public String getRequisitosDesejaveis() {
-        return requisitosDesejaveis;
-    }
-
-    public void setRequisitosDesejaveis(String requisitosDesejaveis) {
-        this.requisitosDesejaveis = requisitosDesejaveis;
     }
 
     public String getAddress() {
@@ -211,9 +200,9 @@ public class Company {
         return "Company{" +
                 "idCompany=" + idCompany +
                 ", userCompany=" + userCompany +
+                ", internshipList=" + internshipList +
                 ", CNPJ='" + CNPJ + '\'' +
                 ", companyName='" + companyName + '\'' +
-                ", requisitosDesejaveis='" + requisitosDesejaveis + '\'' +
                 ", address='" + address + '\'' +
                 ", number=" + number +
                 ", city='" + city + '\'' +

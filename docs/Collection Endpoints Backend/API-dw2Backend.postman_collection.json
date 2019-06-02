@@ -22,7 +22,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"username\": \"NOVAMENTE\",\n    \"email\": \"Manoela@gmail.com\",\n    \"password\": \"ManuMuitoFofa\",\n    \"userType\": \"Aluno\"\n}"
+							"raw": "{\n    \"username\": \"Empresa1\",\n    \"email\": \"empresa1@gmail.com\",\n    \"password\": \"123\",\n    \"userType\": \"Empresa\"\n}"
 						},
 						"url": {
 							"raw": "http://localhost:8080/usuario/",
@@ -108,7 +108,7 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:8080/usuario/22",
+							"raw": "http://localhost:8080/usuario/3",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -116,7 +116,7 @@
 							"port": "8080",
 							"path": [
 								"usuario",
-								"22"
+								"3"
 							]
 						}
 					},
@@ -136,7 +136,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"idUser\": 22,\n    \"username\": \"NOVAMENTE\",\n    \"email\": \"Manoela@hotmail.com\",\n    \"password\": \"ManuMuitoFofa\",\n    \"userType\": \"Supervisor\"\n}"
+							"raw": "{\n    \"username\": \"NOVAMENTE\",\n    \"email\": \"Manoela@gmail.com\",\n    \"password\": \"ManuMuitoFofa\",\n    \"userType\": \"Empresa\"\n}"
 						},
 						"url": {
 							"raw": "http://localhost:8080/usuario/",
@@ -172,7 +172,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"idUser\": 22,\n    \"username\": \"NOVAMENTE\",\n    \"email\": \"Manoela@gmail.com\",\n    \"password\": \"ManuMuitoFofa\",\n    \"userType\": \"Empresa\"\n}"
+							"raw": "{\n    \"idUser\": 1,\n    \"username\": \"NOVAMENTE\",\n    \"email\": \"Manoela@gmail.com\",\n    \"password\": \"ManuMuitoFofa\",\n    \"userType\": \"Aluno\"\n}"
 						},
 						"url": {
 							"raw": "http://localhost:8080/usuario/",
@@ -245,6 +245,324 @@
 					}
 				}
 			]
+		},
+		{
+			"name": "EMPRESA",
+			"item": [
+				{
+					"name": "BUSCAR LISTA DE EMPRESAS",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/empresa/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"empresa",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CADASTRAR EMPRESA",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"userCompany\": {\r\n    \t\"idUser\": 1\r\n\t},\r\n    \"cnpj\": \"8754236587\",\r\n    \"companyName\": \"Fofura\",\r\n\t\"address\": \"Manoela@gmail.com\",\r\n    \"number\": 842,\r\n    \"city\": \"Aluno\",\r\n\t\"neighborhood\": \"Manoela@gmail.com\",\r\n    \"state\": \"ManuMuitoFofa\",\r\n    \"cep\": \"Aluno\",\r\n\t\"telephone\": \"Manoela@gmail.com\",\r\n    \"responsible\": \"Empresa\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/empresa/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"empresa",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ATUALIZAR EMPRESA",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"idCompany\": 1,\n        \"userCompany\": {\n            \"idUser\": 1,\n            \"username\": \"Empresa123\",\n            \"email\": \"empresa1@gmail.com\",\n            \"password\": \"123\",\n            \"userType\": \"Empresa\"\n        },\n        \"companyName\": \"Empresa 123 LTDA\",\n        \"address\": \"Manoela@gmail.com\",\n        \"number\": 842,\n        \"city\": \"Aluno\",\n        \"neighborhood\": \"Manoela@gmail.com\",\n        \"state\": \"ManuMuitoFofa\",\n        \"cep\": \"Aluno\",\n        \"telephone\": \"Manoela@gmail.com\",\n        \"responsible\": \"Empresa\",\n        \"cnpj\": \"8754236587\"\n    }"
+						},
+						"url": {
+							"raw": "http://localhost:8080/empresa/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"empresa",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BUSCAR EMPRESA PELO ID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/empresa/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"empresa",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EXCLUIR EMPRESA",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"idCompany\": 1,\r\n\t\"userCompany\": {\r\n    \t\"idUser\": 1\r\n\t},\r\n    \"cnpj\": \"8754236587\",\r\n    \"companyName\": \"Fofura\",\r\n\t\"address\": \"Manoela@gmail.com\",\r\n    \"number\": 842,\r\n    \"city\": \"Aluno\",\r\n\t\"neighborhood\": \"Manoela@gmail.com\",\r\n    \"state\": \"ManuMuitoFofa\",\r\n    \"cep\": \"Aluno\",\r\n\t\"telephone\": \"Manoela@gmail.com\",\r\n    \"responsible\": \"Empresa\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/empresa/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"empresa",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ESTÁGIO",
+			"item": [
+				{
+					"name": "BUSCAR LISTA DE ESTÁGIOS",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/estagio/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"estagio",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CADASTRAR ESTÁGIO",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"idCompany\": 1,\n\t\"internship\":{\n\t\t\"description\": \"Programação WEB\",\n\t    \"requiredRequirements\": \"Angular 7 e Spring\",\n\t    \"desirableRequirements\": \"Spring e Angular 7\"\n\t}\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/estagio/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"estagio",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ATUALIZAR ESTÁGIO",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"idCompany\": 12,\r\n\t\"userCompany\": {\r\n    \t\"idUser\": 1\r\n\t},\r\n    \"cnpj\": \"99999\",\r\n    \"companyName\": \"ManuMuitoFofa\",\r\n\t\"address\": \"Manoela@gmail.com\",\r\n    \"number\": 12,\r\n    \"city\": \"Aluno\",\r\n\t\"neighborhood\": \"Manoela@gmail.com\",\r\n    \"state\": \"ManuMuitoFofa\",\r\n    \"cep\": \"Aluno\",\r\n\t\"telephone\": \"Manoela@gmail.com\",\r\n    \"responsible\": \"Vai caraaaalho\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/estagio/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"estagio",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BUSCAR ESTÁGIO PELO ID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/estagio/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"estagio",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EXCLUIR ESTÁGIO",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"idCompany\": 14,\n    \"userCompany\": {\n        \"idUser\": 1,\n        \"username\": \"NOVAMENTE\",\n        \"email\": \"Manoela@gmail.com\",\n        \"password\": \"ManuMuitoFofa\",\n        \"userType\": \"Aluno\"\n    },\n    \"internshipList\": [],\n    \"companyName\": \"ManuMuitoFofa\",\n    \"address\": \"Manoela@gmail.com\",\n    \"number\": 12,\n    \"city\": \"Aluno\",\n    \"neighborhood\": \"Manoela@gmail.com\",\n    \"state\": \"ManuMuitoFofa\",\n    \"cep\": \"Aluno\",\n    \"telephone\": \"Manoela@gmail.com\",\n    \"responsible\": \"Vai caraaaalho\",\n    \"cnpj\": \"99999\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/estagio/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"estagio",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ALUNO",
+			"item": []
 		}
 	]
 }

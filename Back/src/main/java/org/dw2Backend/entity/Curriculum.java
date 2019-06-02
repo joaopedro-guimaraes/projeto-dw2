@@ -17,10 +17,10 @@ public class Curriculum {
     private int identification;
 
     @ManyToMany
-    private List<AcademicFormation> academicFormationList = new ArrayList<AcademicFormation>();
+    private List<AcademicFormation> academicFormationList;
 
     @ManyToMany
-    private List<ProfessionalExperience> professionalExperienceList = new ArrayList<ProfessionalExperience>();
+    private List<ProfessionalExperience> professionalExperienceList;
     //</editor-fold>
 
     //<editor-fold desc="Builders">

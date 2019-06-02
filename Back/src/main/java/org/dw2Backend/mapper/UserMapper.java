@@ -4,6 +4,7 @@ import org.dw2Backend.entity.User;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Repository
@@ -27,18 +28,15 @@ public class UserMapper {
     }
 
     public List<User> SearchById(int id) {
-        List<User> users = null;
-
-        String command = "select u from User u where u.idUser=?1";
-        Query query = manager.createQuery(command);
-
-        query.setParameter(1, id);
+        List<User> userList = null;
+        User user = manager.find(User.class, id);
 
         try {
-            users = query.getResultList();
-            return users;
+            userList = new ArrayList<User>();
+            userList.add(user);
+            return userList;
         } catch (NoResultException e) {
-            return users;
+            return userList;
         }
     }
 
@@ -61,12 +59,14 @@ public class UserMapper {
         }
     }
 
-    public boolean Save(User user) {
+    public User Save(User user) {
         try {
+
             manager.persist(user);
-            return true;
+            return user;
         } catch (Exception e){
-            return false;
+            user = null;
+            return user;
         }
     }
 
@@ -80,9 +80,15 @@ public class UserMapper {
     }
 
     public boolean Delete(User user) {
+        User userDelete = manager.find(User.class, user.getIdUser());
+
         try {
-            manager.remove(user);
-            return true;
+            if(userDelete != null){
+                manager.remove(userDelete);
+                return true;
+            }
+
+            return false;
         } catch (Exception e){
             return false;
         }

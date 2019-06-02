@@ -1,6 +1,7 @@
 package org.dw2Backend.entity;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 public class Internship {
@@ -11,32 +12,36 @@ public class Internship {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idInternship;
 
-    @OneToOne
-    private User userInternship;
-
-    @Column(nullable = false)
+    @Column
     private String description;
 
-    @Column(nullable = false)
+    @Column
     private String requiredRequirements;
 
-    @Column(nullable = false)
+    @Column
     private String desirableRequirements;
+
+    @ManyToOne
+    @JoinColumn(name = "idCompany")
+    private Company company;
+
+    /*@ManyToMany(mappedBy = "internshipList")
+    private List<Student> studentList;*/
     //</editor-fold>
 
     //<editor-fold desc="Builders">
     ////////////////////////////////
     public Internship(
                         int idInternship
-                        , User userInternship
                         , String description
                         , String requiredRequirements
-                        , String desirableRequirements) {
+                        , String desirableRequirements
+                        , Company company) {
         this.idInternship = idInternship;
-        this.userInternship = userInternship;
         this.description = description;
         this.requiredRequirements = requiredRequirements;
         this.desirableRequirements = desirableRequirements;
+        this.company = company;
     }
 
     public Internship() { }
@@ -50,14 +55,6 @@ public class Internship {
 
     public void setIdInternship(int idInternship) {
         this.idInternship = idInternship;
-    }
-
-    public User getUserInternship() {
-        return userInternship;
-    }
-
-    public void setUserInternship(User userInternship) {
-        this.userInternship = userInternship;
     }
 
     public String getDescription() {
@@ -83,6 +80,14 @@ public class Internship {
     public void setDesirableRequirements(String desirableRequirements) {
         this.desirableRequirements = desirableRequirements;
     }
+
+    public Company getCompany() {
+        return company;
+    }
+
+    public void setCompany(Company company) {
+        this.company = company;
+    }
     //</editor-fold>
 
     //<editor-fold desc="toStrings">
@@ -91,10 +96,10 @@ public class Internship {
     public String toString() {
         return "Internship{" +
                 "idInternship=" + idInternship +
-                ", userInternship=" + userInternship +
                 ", description='" + description + '\'' +
                 ", requiredRequirements='" + requiredRequirements + '\'' +
                 ", desirableRequirements='" + desirableRequirements + '\'' +
+                ", company='" + company + '\'' +
                 '}';
     }
     //</editor-fold>
