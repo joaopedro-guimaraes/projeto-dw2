@@ -10,82 +10,12 @@
     <list default="true" id="0d95db05-f08a-4b25-ab5e-5721489f31f9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/dw2Backend/controller/Company/CompanyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dw2Backend/controller/Company/CompanyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/dw2Backend/controller/Internship/InternshipController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dw2Backend/controller/Internship/InternshipController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/dw2Backend/controller/User/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dw2Backend/controller/User/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/dw2Backend/mapper/CompanyMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dw2Backend/mapper/CompanyMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/dw2Backend/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dw2Backend/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/dw2Backend/service/CompanyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dw2Backend/service/CompanyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/dw2Backend/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dw2Backend/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/dw2Backend/controller/Company/CompanyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/dw2Backend/controller/Company/CompanyController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/dw2Backend/controller/User/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/dw2Backend/controller/User/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/dw2Backend/mapper/CompanyMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/dw2Backend/mapper/CompanyMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/dw2Backend/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/dw2Backend/mapper/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/dw2Backend/service/CompanyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/dw2Backend/service/CompanyService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/dw2Backend/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/dw2Backend/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/META-INF/persistence.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/DTO/Internship/InternshipCompanyDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/controller/Company/CompanyController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/controller/Curriculum/CurriculumController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/controller/Internship/InternshipController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/controller/User/LoginUserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/controller/User/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/entity/AcademicFormation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/entity/Company.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/entity/Curriculum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/entity/Institution.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/entity/Internship.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/entity/ProfessionalExperience.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/entity/Student.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/entity/Supervisor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/entity/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/mapper/CompanyMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/mapper/CurriculumMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/mapper/InternshipMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/mapper/UserMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/service/CompanyService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/service/CurriculumService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/service/InternshipService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/utilities/enumUserType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/lib/antlr-2.7.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/lib/byte-buddy-1.6.14.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/lib/classmate-1.3.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/lib/commons-dbcp2-2.6.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/lib/commons-logging-1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/lib/commons-pool2-2.6.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/lib/dom4j-1.6.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/lib/hibernate-commons-annotations-5.0.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/lib/hibernate-core-5.2.17.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/lib/hibernate-entitymanager-5.2.17.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/lib/hsqldb-2.4.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/lib/jackson-annotations-2.9.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/lib/jackson-core-2.9.9.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/lib/jackson-databind-2.9.9.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/lib/jandex-2.0.3.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/lib/javassist-3.22.0-GA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/lib/jboss-logging-3.3.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/lib/jboss-transaction-api_1.2_spec-1.0.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/lib/spring-aop-5.1.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/lib/spring-beans-5.1.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/lib/spring-boot-2.1.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/lib/spring-context-5.1.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/lib/spring-core-5.1.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/lib/spring-expression-5.1.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/lib/spring-jcl-5.1.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/lib/spring-jdbc-5.1.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/lib/spring-orm-5.1.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/lib/spring-tx-5.1.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/lib/spring-web-5.1.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/lib/spring-webmvc-5.1.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/spring-context.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/views/hello/view.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/views/hello/view2.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/views/hello/view3.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hsqldb-2.4.1/hsqldb/data/jpatable.lck" beforeDir="false" afterPath="$PROJECT_DIR$/../hsqldb-2.4.1/hsqldb/data/jpatable.lck" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hsqldb-2.4.1/hsqldb/data/jpatable.log" beforeDir="false" afterPath="$PROJECT_DIR$/../hsqldb-2.4.1/hsqldb/data/jpatable.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hsqldb-2.4.1/hsqldb/data/jpatable.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../hsqldb-2.4.1/hsqldb/data/jpatable.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hsqldb-2.4.1/hsqldb/data/jpatable.script" beforeDir="false" afterPath="$PROJECT_DIR$/../hsqldb-2.4.1/hsqldb/data/jpatable.script" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -111,11 +41,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/controller/Company/CompanyController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="72" column="25" lean-forward="true" selection-start-line="72" selection-start-column="25" selection-end-line="72" selection-end-column="25" />
+            <state relative-caret-position="320">
+              <caret line="64" column="39" selection-start-line="64" selection-start-column="39" selection-end-line="64" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/controller/Internship/InternshipController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="347">
+              <caret line="60" column="39" selection-start-line="60" selection-start-column="39" selection-end-line="60" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/controller/User/UserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="274">
+              <caret line="38" column="36" lean-forward="true" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/mapper/InternshipMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="393">
+              <caret line="67" column="49" lean-forward="true" selection-start-line="67" selection-start-column="49" selection-end-line="67" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -193,15 +159,15 @@
         <option value="$PROJECT_DIR$/src/main/java/org/dw2Backend/DTO/Internship/InternshipCompanyDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/dw2Backend/entity/Company.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/dw2Backend/mapper/InternshipMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/dw2Backend/controller/Internship/InternshipController.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/dw2Backend/entity/Student.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/dw2Backend/entity/Internship.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/dw2Backend/service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/dw2Backend/controller/User/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/dw2Backend/mapper/UserMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/dw2Backend/mapper/CompanyMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/dw2Backend/service/CompanyService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/dw2Backend/controller/User/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/dw2Backend/controller/Company/CompanyController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/dw2Backend/controller/Internship/InternshipController.java" />
       </list>
     </option>
   </component>
@@ -243,8 +209,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -377,6 +341,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -386,7 +352,7 @@
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="dw2backend" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559452429570" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559456537689" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -653,11 +619,13 @@
       <workItem from="1559254911050" duration="645000" />
       <workItem from="1559256781058" duration="17380000" />
       <workItem from="1559366331360" duration="11135000" />
+      <workItem from="1559454824517" duration="415000" />
+      <workItem from="1559455437866" duration="956000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="223956000" />
+    <option name="totallyTimeSpent" value="225327000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -673,7 +641,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Persistence" order="0" sideWeight="0.5009862" side_tool="true" type="WINDOWED" weight="0.21465296" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.4990138" visible="true" weight="0.25642672" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.4990138" visible="true" weight="0.26285347" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="3" />
       <window_info id="Image Layers" order="4" />
@@ -683,7 +651,7 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32802126" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8374036" weight="0.25763613" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8374036" visible="true" weight="0.25763613" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.75385606" weight="0.41434264" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -752,19 +720,19 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/dw2Backend/controller/User/UserController.java</url>
-          <line>78</line>
+          <line>82</line>
           <properties />
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/dw2Backend/controller/User/UserController.java</url>
-          <line>43</line>
+          <line>47</line>
           <properties />
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/dw2Backend/controller/User/UserController.java</url>
-          <line>49</line>
+          <line>53</line>
           <properties />
           <option name="timeStamp" value="30" />
         </line-breakpoint>
@@ -1122,16 +1090,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/controller/Internship/InternshipController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/entity/Company.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="901">
@@ -1182,16 +1140,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="65">
           <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/controller/User/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1327,8 +1275,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/mapper/InternshipMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="61" column="60" selection-start-line="61" selection-start-column="60" selection-end-line="61" selection-end-column="60" />
+        <state relative-caret-position="393">
+          <caret line="67" column="49" lean-forward="true" selection-start-line="67" selection-start-column="49" selection-end-line="67" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/controller/User/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="38" column="36" lean-forward="true" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1337,8 +1295,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/controller/Company/CompanyController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="72" column="25" lean-forward="true" selection-start-line="72" selection-start-column="25" selection-end-line="72" selection-end-column="25" />
+        <state relative-caret-position="320">
+          <caret line="64" column="39" selection-start-line="64" selection-start-column="39" selection-end-line="64" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/controller/Internship/InternshipController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="60" column="39" selection-start-line="60" selection-start-column="39" selection-end-line="60" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

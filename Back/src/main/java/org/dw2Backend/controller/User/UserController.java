@@ -35,6 +35,10 @@ public class UserController {
             return new ResponseEntity(HttpStatus.NO_CONTENT);
         }
 
+        for (User user: userList) {
+            user.setPassword("***");
+        }
+
         return new ResponseEntity(userList, HttpStatus.OK);
     }
 
