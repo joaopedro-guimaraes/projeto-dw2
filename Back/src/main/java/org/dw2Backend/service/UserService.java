@@ -32,7 +32,7 @@ public class UserService {
         return userMapper.SearchById(id);
     }
 
-    public boolean Save(User user) {
+    public User Save(User user) {
         return userMapper.Save(user);
     }
 

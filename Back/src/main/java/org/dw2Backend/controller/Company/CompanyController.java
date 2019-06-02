@@ -72,8 +72,8 @@ public class CompanyController {
     @PostMapping(value = "/empresa")
     public ResponseEntity Register(@RequestBody Company company){
 
-        if(companyService.Save(company)){
-            return new ResponseEntity(HttpStatus.OK);
+        if((companyService.Save(company)) != null){
+            return new ResponseEntity(company ,HttpStatus.OK);
         }
 
         return new ResponseEntity(HttpStatus.BAD_REQUEST);

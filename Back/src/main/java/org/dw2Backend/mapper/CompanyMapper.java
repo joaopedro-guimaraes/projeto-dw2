@@ -47,12 +47,13 @@ public class CompanyMapper {
         }
     }
 
-    public boolean Save(Company company) {
+    public Company Save(Company company) {
         try {
             manager.persist(company);
-            return true;
+            return company;
         } catch (Exception e){
-            return false;
+            company = null;
+            return company;
         }
     }
 

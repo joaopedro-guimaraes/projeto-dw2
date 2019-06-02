@@ -27,7 +27,7 @@ public class CompanyService {
         return companyMapper.SearchById(id);
     }
 
-    public boolean Save(Company company) {
+    public Company Save(Company company) {
         return companyMapper.Save(company);
     }
 

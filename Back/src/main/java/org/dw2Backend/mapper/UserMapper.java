@@ -59,12 +59,14 @@ public class UserMapper {
         }
     }
 
-    public boolean Save(User user) {
+    public User Save(User user) {
         try {
+
             manager.persist(user);
-            return true;
+            return user;
         } catch (Exception e){
-            return false;
+            user = null;
+            return user;
         }
     }
 
