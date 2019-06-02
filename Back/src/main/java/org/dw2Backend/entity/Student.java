@@ -16,13 +16,8 @@ public class Student {
     @OneToOne
     private User userStudent;
 
-    /*@ManyToMany
-    @JoinTable(name = "student_internship",
-            joinColumns =
-                @JoinColumn(name = "idStudent"),
-            inverseJoinColumns =
-                @JoinColumn(name = "idInternship"))
-    private List<Internship> internshipList;*/
+    @ManyToMany
+    private List<Internship> internshipList;
 
     @OneToOne
     private Curriculum curriculum;
@@ -190,6 +185,22 @@ public class Student {
 
     public String getCourse() {
         return course;
+    }
+
+    public List<Internship> getInternshipList() {
+        return internshipList;
+    }
+
+    public void setInternshipList(List<Internship> internshipList) {
+        this.internshipList = internshipList;
+    }
+
+    public Curriculum getCurriculum() {
+        return curriculum;
+    }
+
+    public void setCurriculum(Curriculum curriculum) {
+        this.curriculum = curriculum;
     }
 
     public void setCourse(String course) {
