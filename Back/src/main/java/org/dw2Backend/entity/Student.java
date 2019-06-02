@@ -67,7 +67,8 @@ public class Student {
 
     public Student(
                     int idStudent
-                    ,User userStudent
+                    , User userStudent
+                    , Curriculum curriculum
                     , String register
                     , String name
                     , String address
@@ -81,6 +82,7 @@ public class Student {
                     , Date dataIngresso) {
         this.idStudent = idStudent;
         this.userStudent = userStudent;
+        this.curriculum = curriculum;
         this.register = register;
         this.name = name;
         this.address = address;
@@ -114,6 +116,14 @@ public class Student {
 
     public void setUserStudent(User userStudent) {
         this.userStudent = userStudent;
+    }
+
+    public Curriculum getCurriculum() {
+        return curriculum;
+    }
+
+    public void setCurriculum(Curriculum curriculum) {
+        this.curriculum = curriculum;
     }
 
     public String getRegister() {
@@ -212,6 +222,7 @@ public class Student {
         return "Student{" +
                 "idStudent=" + idStudent +
                 ", userStudent=" + userStudent +
+                ", curriculum=" + curriculum +
                 ", register='" + register + '\'' +
                 ", name='" + name + '\'' +
                 ", address='" + address + '\'' +
