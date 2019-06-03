@@ -53,9 +53,10 @@ public class CurriculumController {
     @Transactional
     @PostMapping(value = "/curriculo")
     public ResponseEntity Register(@RequestBody CurriculumStudentDTO objDTO){
+        Curriculum curriculumResponse = curriculumService.Save(objDTO);
 
-        if(curriculumService.Save(objDTO)){
-            return new ResponseEntity(HttpStatus.OK);
+        if(curriculumResponse != null){
+            return new ResponseEntity(curriculumResponse, HttpStatus.OK);
         }
 
         return new ResponseEntity(HttpStatus.BAD_REQUEST);
@@ -74,9 +75,9 @@ public class CurriculumController {
 
     @Transactional
     @DeleteMapping(value = "/curriculo")
-    public ResponseEntity Delete(@RequestBody Curriculum curriculum){
+    public ResponseEntity Delete(@RequestBody CurriculumStudentDTO objDTO){
 
-        if(curriculumService.Delete(curriculum)){
+        if(curriculumService.Delete(objDTO)){
             return new ResponseEntity(HttpStatus.OK);
         }
 

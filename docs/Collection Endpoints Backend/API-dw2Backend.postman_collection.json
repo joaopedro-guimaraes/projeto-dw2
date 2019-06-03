@@ -22,7 +22,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"username\": \"Aluno1\",\n    \"email\": \"aluno1@gmail.com\",\n    \"password\": \"321\",\n    \"userType\": \"Aluno\"\n}"
+							"raw": "{\n    \"username\": \"Aluno2\",\n    \"email\": \"aluno2@gmail.com\",\n    \"password\": \"321\",\n    \"userType\": \"Aluno\"\n}"
 						},
 						"url": {
 							"raw": "http://localhost:8080/usuario/",
@@ -136,7 +136,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"username\": \"NOVAMENTE\",\n    \"email\": \"Manoela@gmail.com\",\n    \"password\": \"ManuMuitoFofa\",\n    \"userType\": \"Empresa\"\n}"
+							"raw": "{\n    \"idUser\": 1,\n    \"username\": \"BrayanGoncalves\",\n    \"email\": \"brayan.goncalves@aluno.ifsp.edu.br\",\n    \"password\": \"brayan1254\",\n    \"userType\": \"Aluno\"\n}"
 						},
 						"url": {
 							"raw": "http://localhost:8080/usuario/",
@@ -447,7 +447,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n\t\"userStudent\": {\r\n    \t\"idUser\": 3\r\n\t},\r\n    \"register\": \"8754236587\",\r\n    \"name\": \"Hahaha\",\r\n\t\"address\": \"Manoela@gmail.com\",\r\n    \"number\": 99999,\r\n    \"city\": \"Aluno\",\r\n\t\"neighborhood\": \"Manoela@gmail.com\",\r\n    \"state\": \"ManuMuitoFofa\",\r\n    \"cep\": \"Aluno\",\r\n\t\"telephone\": \"Manoela@gmail.com\",\r\n    \"course\": \"Empresa\",\r\n    \"dataIngresso\": \"2019-10-14\"\r\n}"
+							"raw": "{\r\n\t\"userStudent\": {\r\n    \t\"idUser\": 1\r\n\t},\r\n    \"register\": \"140038x\",\r\n    \"name\": \"Brayan Matheus Gonçalves\",\r\n\t\"address\": \"Rua Doutor Pedro Raimundo\",\r\n    \"number\": 269,\r\n    \"city\": \"São Carlos\",\r\n\t\"neighborhood\": \"Vila Carmem\",\r\n    \"state\": \"SP\",\r\n    \"cep\": \"13532232\",\r\n\t\"telephone\": \"19996308548\",\r\n    \"course\": \"ADS\",\r\n    \"dataIngresso\": \"2019-10-14\"\r\n}"
 						},
 						"url": {
 							"raw": "http://localhost:8080/aluno/",
@@ -541,7 +541,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n\t\"idStudent\": 3,\r\n\t\"userStudent\": {\r\n    \t\"idUser\": 3\r\n\t},\r\n    \"register\": \"8754236587\",\r\n    \"name\": \"Hahaha\",\r\n\t\"address\": \"Manoela@gmail.com\",\r\n    \"number\": 99999,\r\n    \"city\": \"Aluno\",\r\n\t\"neighborhood\": \"Manoela@gmail.com\",\r\n    \"state\": \"ManuMuitoFofa\",\r\n    \"cep\": \"Aluno\",\r\n\t\"telephone\": \"Manoela@gmail.com\",\r\n    \"course\": \"Empresa\",\r\n    \"dataIngresso\": \"2019-10-25\"\r\n}"
+							"raw": "{\n    \"idStudent\": 1,\n    \"userStudent\": null,\n    \"curriculum\": {\n        \"idCurriculum\": 1,\n        \"identification\": \"Curriculum 1.1.1.1\",\n        \"academicFormationList\": [],\n        \"professionalExperienceList\": []\n    },\n    \"register\": \"8754236587\",\n    \"name\": \"Hahaha\",\n    \"address\": \"Manoela@gmail.com\",\n    \"number\": 99999,\n    \"city\": \"Aluno\",\n    \"neighborhood\": \"Manoela@gmail.com\",\n    \"state\": \"ManuMuitoFofa\",\n    \"cep\": \"Aluno\",\n    \"telephone\": \"Manoela@gmail.com\",\n    \"course\": \"Empresa\",\n    \"dataIngresso\": 1570935600000\n}"
 						},
 						"url": {
 							"raw": "http://localhost:8080/aluno/",
@@ -761,7 +761,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"idStudent\": 1,\n\t\"curriculum\":{\n\t\t\"identification\": \"Curriculum 1\",\n\t    \"academicFormationList\": { },\n\t    \"professionalExperienceList\": { }\n\t}\n}"
+							"raw": "{\n\t\"idStudent\": 3,\n\t\"curriculum\":{\n\t\t\"identification\": \"CV\"\n\t}\n}"
 						},
 						"url": {
 							"raw": "http://localhost:8080/curriculo/",
@@ -792,7 +792,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n\t\"idCompany\": 12,\r\n\t\"userCompany\": {\r\n    \t\"idUser\": 1\r\n\t},\r\n    \"cnpj\": \"99999\",\r\n    \"companyName\": \"ManuMuitoFofa\",\r\n\t\"address\": \"Manoela@gmail.com\",\r\n    \"number\": 12,\r\n    \"city\": \"Aluno\",\r\n\t\"neighborhood\": \"Manoela@gmail.com\",\r\n    \"state\": \"ManuMuitoFofa\",\r\n    \"cep\": \"Aluno\",\r\n\t\"telephone\": \"Manoela@gmail.com\",\r\n    \"responsible\": \"Vai caraaaalho\"\r\n}"
+							"raw": "{\n    \"idCurriculum\": 8,\n    \"identification\": \"Currículo Vitae\",\n    \"academicFormationList\": [],\n    \"professionalExperienceList\": []\n}"
 						},
 						"url": {
 							"raw": "http://localhost:8080/curriculo/",
@@ -828,7 +828,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "http://localhost:8080/curriculo/2",
+							"raw": "http://localhost:8080/curriculo/8",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -836,7 +836,7 @@
 							"port": "8080",
 							"path": [
 								"curriculo",
-								"2"
+								"8"
 							]
 						}
 					},
@@ -855,7 +855,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"idCompany\": 14,\n    \"userCompany\": {\n        \"idUser\": 1,\n        \"username\": \"NOVAMENTE\",\n        \"email\": \"Manoela@gmail.com\",\n        \"password\": \"ManuMuitoFofa\",\n        \"userType\": \"Aluno\"\n    },\n    \"internshipList\": [],\n    \"companyName\": \"ManuMuitoFofa\",\n    \"address\": \"Manoela@gmail.com\",\n    \"number\": 12,\n    \"city\": \"Aluno\",\n    \"neighborhood\": \"Manoela@gmail.com\",\n    \"state\": \"ManuMuitoFofa\",\n    \"cep\": \"Aluno\",\n    \"telephone\": \"Manoela@gmail.com\",\n    \"responsible\": \"Vai caraaaalho\",\n    \"cnpj\": \"99999\"\n}"
+							"raw": "{\n\t\"idStudent\": 3,\n\t\"curriculum\":{\n\t\t\"idCurriculum\": 3,\n\t    \"identification\": \"CV\",\n\t    \"academicFormationList\": [],\n\t    \"professionalExperienceList\": []\n\t}\n}"
 						},
 						"url": {
 							"raw": "http://localhost:8080/curriculo/",

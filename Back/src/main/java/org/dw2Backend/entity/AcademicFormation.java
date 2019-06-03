@@ -14,6 +14,10 @@ public class AcademicFormation {
     @OneToOne
     private Institution institution;
 
+    @ManyToOne
+    @JoinColumn(name = "idCurriculum")
+    private Curriculum curriculum;
+
     @Column
     private String course;
 
@@ -30,11 +34,13 @@ public class AcademicFormation {
                                 Institution institution
                                 , String course
                                 , String level
-                                , String situation) {
+                                , String situation
+                                , Curriculum curriculum) {
         this.institution = institution;
         this.course = course;
         this.level = level;
         this.situation = situation;
+        this.curriculum = curriculum;
     }
 
     public AcademicFormation() { }
@@ -81,6 +87,14 @@ public class AcademicFormation {
     public void setSituation(String situation) {
         this.situation = situation;
     }
+
+    public Curriculum getCurriculum() {
+        return curriculum;
+    }
+
+    public void setCurriculum(Curriculum curriculum) {
+        this.curriculum = curriculum;
+    }
     //</editor-fold>
 
     //<editor-fold desc="toStrings">
@@ -93,6 +107,7 @@ public class AcademicFormation {
                 ", course='" + course + '\'' +
                 ", level='" + level + '\'' +
                 ", situation='" + situation + '\'' +
+                ", curriculum='" + curriculum + '\'' +
                 '}';
     }
     //</editor-fold>

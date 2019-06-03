@@ -12,6 +12,10 @@ public class ProfessionalExperience {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idProfessionalExperience;
 
+    @ManyToOne
+    @JoinColumn(name = "idCurriculum")
+    private Curriculum curriculum;
+
     @Column
     private String company;
 
@@ -36,13 +40,15 @@ public class ProfessionalExperience {
                                     , String function
                                     , Date dateAdmission
                                     , Date dateDemission
-                                    , String executeTasks) {
+                                    , String executeTasks
+                                    , Curriculum curriculum) {
         this.idProfessionalExperience = idProfessionalExperience;
         this.company = company;
         this.function = function;
         this.dateAdmission = dateAdmission;
         this.dateDemission = dateDemission;
         this.executeTasks = executeTasks;
+        this.curriculum = curriculum;
     }
 
     public ProfessionalExperience() { }
@@ -97,6 +103,14 @@ public class ProfessionalExperience {
     public void setExecuteTasks(String executeTasks) {
         this.executeTasks = executeTasks;
     }
+
+    public Curriculum getCurriculum() {
+        return curriculum;
+    }
+
+    public void setCurriculum(Curriculum curriculum) {
+        this.curriculum = curriculum;
+    }
     //</editor-fold>
 
     //<editor-fold desc="toStrings">
@@ -110,6 +124,7 @@ public class ProfessionalExperience {
                 ", dateAdmission=" + dateAdmission +
                 ", dateDemission=" + dateDemission +
                 ", executeTasks='" + executeTasks + '\'' +
+                ", curriculum='" + curriculum + '\'' +
                 '}';
     }
     //</editor-fold>

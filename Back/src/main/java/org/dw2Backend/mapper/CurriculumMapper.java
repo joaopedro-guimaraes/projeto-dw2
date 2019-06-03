@@ -10,6 +10,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.NoResultException;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
+import java.util.ArrayList;
 import java.util.List;
 
 @Repository
@@ -39,66 +40,45 @@ public class CurriculumMapper {
     }
 
     public List<Curriculum> SearchById(int id) {
-        List<Curriculum> curriculum = null;
-
-        String command = "select c from Curriculum c where c.idCurriculum=?1";
-        Query query = manager.createQuery(command);
-
-        query.setParameter(1, id);
+        List<Curriculum> curriculumList = null;
+        Curriculum curriculum = manager.find(Curriculum.class, id);
 
         try {
-            curriculum = query.getResultList();
-            return curriculum;
-        } catch (NoResultException e) {
-            return curriculum;
+
+            if(curriculum != null){
+                curriculumList = new ArrayList<Curriculum>();
+                curriculumList.add(curriculum);
+            }
+
+            return curriculumList;
+        } catch (Exception e){
+            return curriculumList;
         }
     }
 
-    public boolean Save(CurriculumStudentDTO objDTO) {
+    public Curriculum Save(CurriculumStudentDTO objDTO) {
         int idStudent = objDTO.getIdStudent();
         Curriculum curriculum = objDTO.getCurriculum();
 
         try {
             List<Student> studentList = studentMapper.SearchById(idStudent);
-            Student student = studentList.get(0);
 
             if(!studentList.isEmpty()){
+                Student student = studentList.get(0);
                 student.setCurriculum(curriculum);
                 studentMapper.Update(student);
-                return true;
+                //curriculum = manager.find(Curriculum.class, student.getCurriculum());
+                return student.getCurriculum();
             }
 
         } catch (Exception e){
-            return false;
+            curriculum = null;
+            return curriculum;
         }
 
-        return false;
+        curriculum = null;
+        return curriculum;
     }
-
-    /*public boolean Save(InternshipCompanyDTO objDTO) {
-        int idCompany = objDTO.getIdCompany();
-        Internship internship = new Internship();
-
-        internship.setDescription(objDTO.getInternship().getDescription());
-        internship.setDesirableRequirements(objDTO.getInternship().getDesirableRequirements());
-        internship.setRequiredRequirements(objDTO.getInternship().getRequiredRequirements());
-
-        try {
-            List<Company> companyList = companyMapper.SearchById(idCompany);
-            Company company = companyList.get(0);
-
-            if(!companyList.isEmpty()){
-                internship.setCompany(company);
-                company.getInternshipList().add(internship);
-                companyMapper.Update(company);
-                return true;
-            }
-        } catch (Exception e){
-            return false;
-        }
-
-        return false;
-    }*/
 
     public boolean Update(Curriculum curriculum) {
         try {
@@ -109,12 +89,24 @@ public class CurriculumMapper {
         }
     }
 
-    public boolean Delete(Curriculum curriculum) {
+    public boolean Delete(CurriculumStudentDTO objDTO) {
+
         try {
-            manager.remove(curriculum);
-            return true;
+            Curriculum curriculum = manager.find(Curriculum.class, objDTO.getCurriculum().getIdCurriculum());
+            List<Student> studentList = studentMapper.SearchById(objDTO.getIdStudent());
+
+            if(!studentList.isEmpty()){
+                Student student = studentList.get(0);
+                student.setCurriculum(null);
+                studentMapper.Update(student);
+                manager.remove(curriculum);
+                return true;
+            }
+
         } catch (Exception e){
             return false;
         }
+
+        return false;
     }
 }

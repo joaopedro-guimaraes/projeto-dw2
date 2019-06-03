@@ -65,9 +65,9 @@ public class InternshipMapper {
 
         try {
             List<Company> companyList = companyMapper.SearchById(idCompany);
-            Company company = companyList.get(0);
 
             if(!companyList.isEmpty()){
+                Company company = companyList.get(0);
                 internship.setCompany(company);
                 company.getInternshipList().add(internship);
                 companyMapper.Update(company);

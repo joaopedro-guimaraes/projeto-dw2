@@ -24,7 +24,7 @@ public class Student {
                 @JoinColumn(name = "idInternship"))
     private List<Internship> internshipList;*/
 
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL)
     private Curriculum curriculum;
 
     @Column

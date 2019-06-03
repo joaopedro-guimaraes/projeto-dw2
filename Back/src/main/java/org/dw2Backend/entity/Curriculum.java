@@ -1,5 +1,8 @@
 package org.dw2Backend.entity;
 
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
+
 import javax.persistence.*;
 import java.util.List;
 
@@ -15,10 +18,12 @@ public class Curriculum {
     @Column
     private String identification;
 
-    @OneToMany
+    @OneToMany(cascade = CascadeType.ALL , mappedBy = "curriculum", fetch=FetchType.EAGER)
+    @Fetch(FetchMode.SUBSELECT)
     private List<AcademicFormation> academicFormationList;
 
-    @OneToMany
+    @OneToMany(cascade = CascadeType.ALL , mappedBy = "curriculum", fetch=FetchType.EAGER)
+    @Fetch(FetchMode.SUBSELECT)
     private List<ProfessionalExperience> professionalExperienceList;
     //</editor-fold>
 

@@ -74,10 +74,10 @@ public class CompanyMapper {
                 manager.remove(companyDelete);
                 return true;
             }
-
-            return false;
         } catch (Exception e){
             return false;
         }
+
+        return false;
     }
 }

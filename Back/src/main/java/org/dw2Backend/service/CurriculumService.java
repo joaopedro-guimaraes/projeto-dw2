@@ -28,7 +28,7 @@ public class CurriculumService {
         return curriculumMapper.SearchById(id);
     }
 
-    public boolean Save(CurriculumStudentDTO objDTO) {
+    public Curriculum Save(CurriculumStudentDTO objDTO) {
         return curriculumMapper.Save(objDTO);
     }
 
@@ -36,7 +36,7 @@ public class CurriculumService {
         return curriculumMapper.Update(curriculum);
     }
 
-    public boolean Delete(Curriculum curriculum) {
-        return curriculumMapper.Delete(curriculum);
+    public boolean Delete(CurriculumStudentDTO objDTO) {
+        return curriculumMapper.Delete(objDTO);
     }
 }
