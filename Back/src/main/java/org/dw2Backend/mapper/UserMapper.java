@@ -40,7 +40,7 @@ public class UserMapper {
         }
     }
 
-    public boolean Authenticate(User user) {
+    public User Authenticate(User user) {
         String command = "select u from User u where u.email=?1 and u.password=?2";
         Query query = manager.createQuery(command);
 
@@ -48,15 +48,20 @@ public class UserMapper {
         String password = user.getPassword();
 
         query.setParameter(1, email).setParameter(2, password);
-        /* OU --> query.setParameter(1, email);
-                  query.setParameter(2, password); */
 
         try {
-            query.getSingleResult();
-            return true;
-        } catch (NoResultException e) {
-            return false;
+            List<User> userList = query.getResultList();
+
+            if(!userList.isEmpty()){
+                User userResponse = userList.get(0);
+                return userResponse;
+            }
+
+        } catch (Exception e) {
+            return null;
         }
+
+        return null;
     }
 
     public User Save(User user) {

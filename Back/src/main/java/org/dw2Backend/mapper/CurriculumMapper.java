@@ -1,6 +1,8 @@
 package org.dw2Backend.mapper;
 
 import org.dw2Backend.DTO.Curriculum.CurriculumStudentDTO;
+import org.dw2Backend.entity.AcademicFormation;
+import org.dw2Backend.entity.Company;
 import org.dw2Backend.entity.Curriculum;
 import org.dw2Backend.entity.Student;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,15 +29,44 @@ public class CurriculumMapper {
         this.studentMapper = studentMapper;
     }
 
-    public List<Curriculum> SearchAll() {
-        List<Curriculum> curriculum = null;
+    /*public List<Curriculum> SearchAll() {
+        List<Curriculum> curriculumList = null;
 
         try {
-            Query query = manager.createQuery("select u from Curriculum u");
-            curriculum = query.getResultList();
-            return curriculum;
+            Query query = manager.createQuery("select c from Curriculum c");
+            curriculumList = query.getResultList();
+
+            for (Curriculum curriculum: curriculumList) {
+                curriculum = manager.find(Curriculum.class, curriculum.getIdCurriculum());
+
+                for (AcademicFormation academicFormation: curriculum.getAcademicFormationList()) {
+                    academicFormation.setCurriculum(null);
+                }
+            }
+
+            return curriculumList;
         } catch (NoResultException e){
-            return curriculum;
+            return curriculumList;
+        }
+    }*/
+
+    public List<Curriculum> SearchAll() {
+        List<Curriculum> curriculumList = null;
+
+        try {
+            Query query = manager.createQuery("select c from Curriculum c");
+            curriculumList = query.getResultList();
+
+            for (Curriculum curriculum: curriculumList) {
+
+                for (AcademicFormation academicFormation: curriculum.getAcademicFormationList()) {
+                    academicFormation.setCurriculum(null);
+                }
+            }
+
+            return curriculumList;
+        } catch (NoResultException e){
+            return curriculumList;
         }
     }
 
@@ -50,6 +81,12 @@ public class CurriculumMapper {
                 curriculumList.add(curriculum);
             }
 
+            for (Curriculum curr: curriculumList) {
+                for (AcademicFormation academicFormation: curr.getAcademicFormationList()) {
+                    academicFormation.setCurriculum(null);
+                }
+            }
+
             return curriculumList;
         } catch (Exception e){
             return curriculumList;
@@ -57,27 +94,46 @@ public class CurriculumMapper {
     }
 
     public Curriculum Save(CurriculumStudentDTO objDTO) {
-        int idStudent = objDTO.getIdStudent();
         Curriculum curriculum = objDTO.getCurriculum();
+        Curriculum curriculumResponse = null;
 
         try {
-            List<Student> studentList = studentMapper.SearchById(idStudent);
+            List<Student> studentList = studentMapper.SearchById(objDTO.getIdStudent());
+            List<AcademicFormation> academicFormationList = objDTO.getCurriculum().getAcademicFormationList();
 
             if(!studentList.isEmpty()){
+
+                if(academicFormationList != null && !academicFormationList.isEmpty()){
+
+                    for (AcademicFormation academicFormation: academicFormationList) {
+                        academicFormation.setCurriculum(curriculum);
+                    }
+
+                    curriculum.setAcademicFormationList(academicFormationList);
+                }
+
                 Student student = studentList.get(0);
                 student.setCurriculum(curriculum);
                 studentMapper.Update(student);
-                //curriculum = manager.find(Curriculum.class, student.getCurriculum());
-                return student.getCurriculum();
+
+                List<Curriculum> curriculumList = this.SearchById(student.getCurriculum().getIdCurriculum());
+
+                for (Curriculum curr: curriculumList) {
+                    for (AcademicFormation academicFormation: curr.getAcademicFormationList()) {
+                        academicFormation.setCurriculum(null);
+                    }
+
+                    curriculumResponse = curr;
+                }
+
+                return curriculumResponse;
             }
 
         } catch (Exception e){
-            curriculum = null;
-            return curriculum;
+            return null;
         }
 
-        curriculum = null;
-        return curriculum;
+        return null;
     }
 
     public boolean Update(Curriculum curriculum) {

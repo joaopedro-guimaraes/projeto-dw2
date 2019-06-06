@@ -24,12 +24,13 @@ public class LoginUserController {
 
     @PostMapping(value = "/login")
     public ResponseEntity Login(@RequestBody User user, HttpSession session){
+        user = userService.Authenticate(user);
 
-        if(userService.Authenticate(user)) {
+        if(user != null) {
             session.setAttribute("user", user.getUsername());
             session.setAttribute("email", user.getEmail());
 
-            return new ResponseEntity(HttpStatus.OK);
+            return new ResponseEntity(user ,HttpStatus.OK);
         }
 
         return new ResponseEntity(HttpStatus.NOT_FOUND);

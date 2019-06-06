@@ -11,12 +11,12 @@ public class AcademicFormation {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idAcademicFormation;
 
-    @OneToOne
-    private Institution institution;
-
     @ManyToOne
     @JoinColumn(name = "idCurriculum")
     private Curriculum curriculum;
+
+    @Column
+    private String institution;
 
     @Column
     private String course;
@@ -31,7 +31,7 @@ public class AcademicFormation {
     //<editor-fold desc="Builders">
     ////////////////////////////////
     public AcademicFormation(
-                                Institution institution
+                                String institution
                                 , String course
                                 , String level
                                 , String situation
@@ -56,11 +56,11 @@ public class AcademicFormation {
         this.idAcademicFormation = idAcademicFormation;
     }
 
-    public Institution getInstitution() {
+    public String getInstitution() {
         return institution;
     }
 
-    public void setInstitution(Institution institution) {
+    public void setInstitution(String institution) {
         this.institution = institution;
     }
 
