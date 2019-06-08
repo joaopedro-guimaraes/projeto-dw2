@@ -1,3 +1,5 @@
+import { LoginService } from './../core/services/login.service';
+import { LoginModel } from './../core/models/login.model';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormGroup, FormControl } from '@angular/forms';
@@ -22,7 +24,10 @@ export class LoginComponent implements OnInit {
     'tipoUsuario': new FormControl(null),
   });
 
+  login = {} as LoginModel;
+
   constructor(
+    private readonly loginService: LoginService,
     private readonly router: Router,
   ) { }
 
@@ -36,12 +41,20 @@ export class LoginComponent implements OnInit {
     this.labelButton = 'Cadastrar';
   }
 
+  doLogin() {
+    this.loginService.login(this.login)
+      .subscribe(res => {
+        console.log(res);
+      });
+  }
+
   onSubmit() {
     if (this.step === 0) {
       console.log('Logica de login');
-      console.log(this.loginForm.controls.email.value);
-      console.log(this.loginForm.controls.senha.value);
-      this.router.navigate(['home']);
+      this.login.email = this.loginForm.controls.email.value;
+      this.login.password =  this.loginForm.controls.senha.value;
+      this.doLogin();
+      // this.router.navigate(['home']);
     }
     if (this.step === 1) {
       console.log('Logica de cadastrar usuario');
