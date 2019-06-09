@@ -7,7 +7,6 @@ import org.springframework.stereotype.Component;
 public class InternshipCompanyDTO {
 
     private int idCompany;
-
     private Internship internship;
 
     public InternshipCompanyDTO() { }
