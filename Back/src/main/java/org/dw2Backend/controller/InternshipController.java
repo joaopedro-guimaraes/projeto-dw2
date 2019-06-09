@@ -41,8 +41,6 @@ public class InternshipController {
             company.setInternshipList(null);
         }
 
-
-
         return new ResponseEntity(internshipList, HttpStatus.OK);
     }
 

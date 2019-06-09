@@ -9,37 +9,25 @@
   <component name="ChangeListManager">
     <list default="true" id="0d95db05-f08a-4b25-ab5e-5721489f31f9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/dw2Backend/DTO/Internship/InternshipCompanyDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dw2Backend/DTO/Internship/InternshipCompanyDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/dw2Backend/controller/CurriculumController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dw2Backend/controller/CurriculumController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/dw2Backend/controller/InternshipController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dw2Backend/controller/InternshipController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/dw2Backend/controller/LoginUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dw2Backend/controller/LoginUserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/dw2Backend/entity/AcademicFormation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dw2Backend/entity/AcademicFormation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/dw2Backend/entity/Curriculum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dw2Backend/entity/Curriculum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/dw2Backend/entity/ProfessionalExperience.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dw2Backend/entity/ProfessionalExperience.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/dw2Backend/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dw2Backend/entity/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/dw2Backend/mapper/CompanyMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dw2Backend/mapper/CompanyMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/dw2Backend/mapper/CurriculumMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dw2Backend/mapper/CurriculumMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/dw2Backend/mapper/InternshipMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dw2Backend/mapper/InternshipMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/dw2Backend/service/CurriculumService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dw2Backend/service/CurriculumService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/dw2Backend/DTO/Internship/InternshipCompanyDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/dw2Backend/DTO/Internship/InternshipCompanyDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/dw2Backend/controller/CurriculumController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/dw2Backend/controller/CurriculumController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/dw2Backend/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dw2Backend/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/dw2Backend/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dw2Backend/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/dw2Backend/controller/InternshipController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/dw2Backend/controller/InternshipController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/dw2Backend/controller/LoginUserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/dw2Backend/controller/LoginUserController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/dw2Backend/entity/AcademicFormation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/dw2Backend/entity/AcademicFormation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/dw2Backend/entity/Curriculum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/dw2Backend/entity/Curriculum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/dw2Backend/entity/ProfessionalExperience.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/dw2Backend/entity/ProfessionalExperience.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/dw2Backend/entity/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/dw2Backend/entity/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/dw2Backend/mapper/CompanyMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/dw2Backend/mapper/CompanyMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/dw2Backend/mapper/CurriculumMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/dw2Backend/mapper/CurriculumMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/dw2Backend/mapper/InternshipMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/dw2Backend/mapper/InternshipMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/dw2Backend/service/CurriculumService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/dw2Backend/service/CurriculumService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/dw2Backend/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/dw2Backend/mapper/UserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/dw2Backend/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/dw2Backend/service/UserService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/org.dw2Backend.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/org.dw2Backend.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/DTO/Internship/InternshipCompanyDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/DTO/Internship/InternshipCompanyDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/controller/CurriculumController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/controller/CurriculumController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/controller/InternshipController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/controller/InternshipController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/controller/LoginUserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/controller/LoginUserController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/entity/AcademicFormation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/entity/AcademicFormation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/entity/Curriculum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/entity/Curriculum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/entity/ProfessionalExperience.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/entity/ProfessionalExperience.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/entity/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/entity/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/mapper/CompanyMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/mapper/CompanyMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/mapper/CurriculumMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/mapper/CurriculumMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/mapper/InternshipMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/mapper/InternshipMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/service/CurriculumService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/service/CurriculumService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/mapper/UserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/org.dw2Backend/WEB-INF/classes/org/dw2Backend/service/UserService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hsqldb-2.4.1/hsqldb/data/jpatable.lck" beforeDir="false" afterPath="$PROJECT_DIR$/../hsqldb-2.4.1/hsqldb/data/jpatable.lck" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hsqldb-2.4.1/hsqldb/data/jpatable.log" beforeDir="false" afterPath="$PROJECT_DIR$/../hsqldb-2.4.1/hsqldb/data/jpatable.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hsqldb-2.4.1/hsqldb/data/jpatable.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../hsqldb-2.4.1/hsqldb/data/jpatable.properties" afterDir="false" />
@@ -68,28 +56,52 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/DTO/Curriculum/CurriculumStudentDTO.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/entity/Company.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="262">
+              <caret line="17" column="14" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#CurriculumStudentDTO#0;class#CurriculumStudentDTO#0" />
-                <element signature="e#510#511#0" expanded="true" />
+                <element signature="e#895#926#0" />
+                <element signature="e#2038#2071#0" />
+                <element signature="e#2479#2480#0" expanded="true" />
+                <element signature="e#2516#2517#0" expanded="true" />
+                <element signature="e#3484#3485#0" expanded="true" />
+                <element signature="e#3532#3533#0" expanded="true" />
+                <element signature="e#4152#4184#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/mapper/CurriculumMapper.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/entity/Internship.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="70" selection-start-line="70" selection-end-line="70" />
+            <state relative-caret-position="422">
+              <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="n#!!doc;n#Internship#0;n#Internship#0" />
+                <element signature="n#!!doc;n#getIdInternship#0;n#Internship#0" />
+                <element signature="e#1366#1367#0" expanded="true" />
+                <element signature="e#1401#1402#0" expanded="true" />
+                <element signature="e#1454#1455#0" expanded="true" />
+                <element signature="e#1502#1503#0" expanded="true" />
+                <element signature="e#1540#1541#0" expanded="true" />
+                <element signature="e#1574#1575#0" expanded="true" />
+                <element signature="e#1628#1629#0" expanded="true" />
+                <element signature="e#1674#1675#0" expanded="true" />
+                <element signature="e#1721#1722#0" expanded="true" />
+                <element signature="e#1764#1765#0" expanded="true" />
+                <element signature="e#1948#1949#0" expanded="true" />
+                <element signature="e#1992#1993#0" expanded="true" />
+                <element signature="e#2167#2168#0" expanded="true" />
+                <element signature="e#2197#2198#0" expanded="true" />
+                <element signature="e#2244#2245#0" expanded="true" />
+                <element signature="e#2282#2283#0" expanded="true" />
+                <element signature="n#!!doc;n#toString#0;n#Internship#0" />
               </folding>
             </state>
           </provider>
@@ -98,12 +110,15 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/entity/Curriculum.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="48" selection-start-line="48" selection-end-line="48" />
+            <state relative-caret-position="130">
+              <caret line="68" selection-start-line="68" selection-end-line="68" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="n#!!doc;n#Curriculum#0;n#Curriculum#0" />
+                <element signature="e#1543#1544#0" expanded="true" />
                 <element signature="e#1578#1579#0" expanded="true" />
+                <element signature="e#1934#1935#0" expanded="true" />
+                <element signature="e#1978#1979#0" expanded="true" />
                 <element signature="n#!!doc;n#toString#0;n#Curriculum#0" />
               </folding>
             </state>
@@ -111,12 +126,37 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/controller/CurriculumController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/mapper/CurriculumMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="58" column="73" lean-forward="true" selection-start-line="58" selection-start-column="73" selection-end-line="58" selection-end-column="73" />
+            <state relative-caret-position="351">
+              <caret line="118" selection-start-line="118" selection-end-line="118" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/controller/CurriculumController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="274">
+              <caret line="33" column="37" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/controller/CompanyController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-157">
+              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#Update#0;class#CompanyController#0" />
               </folding>
             </state>
           </provider>
@@ -125,35 +165,25 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/service/CurriculumService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="221">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#881#882#0" expanded="true" />
-                <element signature="e#1049#1050#0" expanded="true" />
-                <element signature="e#1103#1104#0" expanded="true" />
+                <element signature="e#669#670#0" expanded="true" />
+                <element signature="e#832#833#0" expanded="true" />
+                <element signature="e#884#885#0" expanded="true" />
+                <element signature="e#936#937#0" expanded="true" />
+                <element signature="e#994#995#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/controller/StudentController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/mapper/UserMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="68" column="5" selection-start-line="61" selection-start-column="4" selection-end-line="68" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/mapper/StudentMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-421">
-              <caret line="35" column="58" selection-start-line="35" selection-start-column="58" selection-end-line="35" selection-end-column="58" />
+            <state relative-caret-position="691">
+              <caret line="56" column="36" selection-start-line="56" selection-start-column="36" selection-end-line="56" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -162,15 +192,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/entity/Student.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/mapper/CompanyMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="153">
+              <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="31" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1173#1204#0" />
-                <element signature="e#2307#2340#0" />
-                <element signature="e#4511#4543#0" />
               </folding>
             </state>
           </provider>
@@ -204,8 +231,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/org/hibernate/mapper/UserMapper.java" />
-        <option value="$PROJECT_DIR$/target/dw2Backend/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/org/spring/mvc/controller/ListController.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/dw2Backend/hibernate/mapper/UserMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/dw2Backend/spring/controller/LoginController.java" />
@@ -235,9 +260,7 @@
         <option value="$PROJECT_DIR$/src/main/java/org/dw2Backend/entity/Company.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/dw2Backend/controller/Internship/InternshipController.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/dw2Backend/entity/Internship.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/dw2Backend/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/dw2Backend/controller/User/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/dw2Backend/mapper/UserMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/dw2Backend/service/CompanyService.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/dw2Backend/controller/Company/CompanyController.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/dw2Backend/DTO/Curriculum/CurriculumStudentDTO.java" />
@@ -247,13 +270,17 @@
         <option value="$PROJECT_DIR$/src/main/java/org/dw2Backend/controller/Student/StudentController.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/dw2Backend/DTO/Internship/InternshipCompanyDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/dw2Backend/entity/ProfessionalExperience.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/dw2Backend/entity/AcademicFormation.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/dw2Backend/entity/Curriculum.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/dw2Backend/entity/Student.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/dw2Backend/mapper/CompanyMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/dw2Backend/mapper/InternshipMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/dw2Backend/service/CurriculumService.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/dw2Backend/controller/CurriculumController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/dw2Backend/entity/AcademicFormation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/dw2Backend/controller/InternshipController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/dw2Backend/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/dw2Backend/controller/LoginUserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/dw2Backend/mapper/UserMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/dw2Backend/mapper/CurriculumMapper.java" />
       </list>
     </option>
@@ -284,10 +311,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1616" />
-    <option name="height" value="886" />
+    <option name="x" value="793" />
+    <option name="width" value="814" />
+    <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -297,7 +323,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -366,16 +391,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="dw2Backend" type="462c0819:PsiDirectoryNode" />
-              <item name="DTO" type="462c0819:PsiDirectoryNode" />
-              <item name="Internship" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Back" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Back" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dw2Backend" type="462c0819:PsiDirectoryNode" />
               <item name="entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -387,19 +402,11 @@
               <item name="dw2Backend" type="462c0819:PsiDirectoryNode" />
               <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Back" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Back" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dw2Backend" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -410,7 +417,7 @@
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="dw2backend" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559540106129" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559781106804" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -421,13 +428,13 @@
     <property name="settings.editor.selected.configurable" value="spring" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\DEV\PROJETO_DW2\projeto-dw2\Back\src\main" />
-      <recent name="C:\DEV\dw2Backend\web" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\DEV\PROJETO_DW2\dw2Backend\web\views\hello" />
       <recent name="C:\DEV\dw2Backend\web\views\hello" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\DEV\PROJETO_DW2\projeto-dw2\Back\src\main" />
+      <recent name="C:\DEV\dw2Backend\web" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -680,11 +687,13 @@
       <workItem from="1559496739992" duration="114000" />
       <workItem from="1559497075584" duration="9698000" />
       <workItem from="1559507514504" duration="13382000" />
+      <workItem from="1559605536666" duration="513000" />
+      <workItem from="1559606515336" duration="9075000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="247150000" />
+    <option name="totallyTimeSpent" value="259539000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -697,9 +706,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="886" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Persistence" order="0" sideWeight="0.5009862" side_tool="true" type="WINDOWED" weight="0.21465296" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4990138" visible="true" weight="0.20051414" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4990138" visible="true" weight="0.18701799" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="3" />
       <window_info id="Image Layers" order="4" />
@@ -710,7 +720,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32802126" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8374036" weight="0.25763613" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.75385606" weight="0.41301462" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.75385606" visible="true" weight="0.41699868" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32802126" />
@@ -801,61 +811,78 @@
           <option name="timeStamp" value="73" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/dw2Backend/controller/CurriculumController.java</url>
-          <line>55</line>
-          <properties />
-          <option name="timeStamp" value="115" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/dw2Backend/controller/CurriculumController.java</url>
-          <line>57</line>
-          <properties />
-          <option name="timeStamp" value="116" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/dw2Backend/controller/CurriculumController.java</url>
-          <line>58</line>
-          <properties />
-          <option name="timeStamp" value="117" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/dw2Backend/controller/CurriculumController.java</url>
-          <line>61</line>
-          <properties />
-          <option name="timeStamp" value="118" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/dw2Backend/mapper/CurriculumMapper.java</url>
-          <line>59</line>
-          <properties />
-          <option name="timeStamp" value="127" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/dw2Backend/mapper/CurriculumMapper.java</url>
-          <line>65</line>
+          <line>103</line>
           <properties />
           <option name="timeStamp" value="128" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/dw2Backend/mapper/CurriculumMapper.java</url>
-          <line>75</line>
+          <line>132</line>
           <properties />
           <option name="timeStamp" value="129" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/dw2Backend/mapper/CurriculumMapper.java</url>
-          <line>79</line>
+          <line>135</line>
           <properties />
           <option name="timeStamp" value="130" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/dw2Backend/mapper/CurriculumMapper.java</url>
-          <line>70</line>
+          <line>101</line>
           <properties />
-          <option name="timeStamp" value="131" />
+          <option name="timeStamp" value="136" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/dw2Backend/mapper/CurriculumMapper.java</url>
+          <line>100</line>
+          <properties />
+          <option name="timeStamp" value="137" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/dw2Backend/mapper/CurriculumMapper.java</url>
+          <line>96</line>
+          <properties />
+          <option name="timeStamp" value="142" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/dw2Backend/mapper/CurriculumMapper.java</url>
+          <line>118</line>
+          <properties />
+          <option name="timeStamp" value="144" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/dw2Backend/mapper/UserMapper.java</url>
+          <line>43</line>
+          <properties />
+          <option name="timeStamp" value="145" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/dw2Backend/mapper/CurriculumMapper.java</url>
+          <line>53</line>
+          <properties />
+          <option name="timeStamp" value="154" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/dw2Backend/mapper/CurriculumMapper.java</url>
+          <line>56</line>
+          <properties />
+          <option name="timeStamp" value="155" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/dw2Backend/mapper/CurriculumMapper.java</url>
+          <line>57</line>
+          <properties />
+          <option name="timeStamp" value="157" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
+        <watch expression="User" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -970,18 +997,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="42" column="20" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
-          <folding>
-            <element signature="n#!!doc;n#User#0;n#User#0" />
-            <element signature="n#!!doc;n#getIdUser#0;n#User#0" />
-            <element signature="e#1783#1815#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.5.RELEASE/spring-webmvc-5.1.5.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="122">
@@ -1009,56 +1024,6 @@
           <caret line="23" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="e#724#725#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.2.17.Final/hibernate-core-5.2.17.Final.jar!/org/hibernate/collection/internal/AbstractPersistentCollection.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="104" selection-start-line="104" selection-end-line="104" />
-          <folding>
-            <element signature="e#3506#3507#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.2.17.Final/hibernate-core-5.2.17.Final.jar!/org/hibernate/collection/internal/PersistentBag.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="240" selection-start-line="240" selection-end-line="240" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.5.RELEASE/spring-web-5.1.5.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="106" selection-start-line="106" selection-end-line="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.5.RELEASE/spring-webmvc-5.1.5.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="571" selection-start-line="571" selection-end-line="571" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#496#497#0" expanded="true" />
-            <element signature="e#548#549#0" expanded="true" />
-            <element signature="e#674#675#0" expanded="true" />
-            <element signature="e#722#723#0" expanded="true" />
-            <element signature="e#804#805#0" expanded="true" />
-            <element signature="e#844#845#0" expanded="true" />
-            <element signature="e#890#891#0" expanded="true" />
-            <element signature="e#930#931#0" expanded="true" />
-            <element signature="e#976#977#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1091,16 +1056,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/mapper/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/service/StudentService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -1108,47 +1063,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#791#792#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/controller/CompanyController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#Update#0;class#CompanyController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/controller/LoginUserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/controller/InternshipController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="67" column="68" selection-start-line="67" selection-start-column="48" selection-end-line="67" selection-end-column="68" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1170,23 +1084,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/entity/Company.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="17" column="87" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="87" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#895#926#0" />
-            <element signature="e#2038#2071#0" />
-            <element signature="e#2479#2480#0" expanded="true" />
-            <element signature="e#2516#2517#0" expanded="true" />
-            <element signature="e#3484#3485#0" expanded="true" />
-            <element signature="e#3532#3533#0" expanded="true" />
-            <element signature="e#4152#4184#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/entity/ProfessionalExperience.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
@@ -1200,73 +1097,6 @@
             <element signature="e#2816#2817#0" expanded="true" />
             <element signature="e#2860#2861#0" expanded="true" />
             <element signature="n#!!doc;n#toString#0;n#ProfessionalExperience#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/entity/AcademicFormation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="99" column="4" selection-start-line="99" selection-start-column="4" selection-end-line="99" selection-end-column="4" />
-          <folding>
-            <element signature="n#!!doc;n#AcademicFormation#0;n#AcademicFormation#0" />
-            <element signature="n#!!doc;n#getIdAcademicFormation#0;n#AcademicFormation#0" />
-            <element signature="e#1622#1623#0" expanded="true" />
-            <element signature="e#1650#1651#0" expanded="true" />
-            <element signature="e#2021#2022#0" expanded="true" />
-            <element signature="e#2054#2055#0" expanded="true" />
-            <element signature="e#2110#2111#0" expanded="true" />
-            <element signature="e#2154#2155#0" expanded="true" />
-            <element signature="n#!!doc;n#toString#0;n#AcademicFormation#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/entity/Internship.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="25" column="28" lean-forward="true" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="n#!!doc;n#Internship#0;n#Internship#0" />
-            <element signature="n#!!doc;n#getIdInternship#0;n#Internship#0" />
-            <element signature="e#1366#1367#0" expanded="true" />
-            <element signature="e#1401#1402#0" expanded="true" />
-            <element signature="e#1454#1455#0" expanded="true" />
-            <element signature="e#1502#1503#0" expanded="true" />
-            <element signature="e#1540#1541#0" expanded="true" />
-            <element signature="e#1574#1575#0" expanded="true" />
-            <element signature="e#1628#1629#0" expanded="true" />
-            <element signature="e#1674#1675#0" expanded="true" />
-            <element signature="e#1721#1722#0" expanded="true" />
-            <element signature="e#1764#1765#0" expanded="true" />
-            <element signature="e#1948#1949#0" expanded="true" />
-            <element signature="e#1992#1993#0" expanded="true" />
-            <element signature="e#2167#2168#0" expanded="true" />
-            <element signature="e#2197#2198#0" expanded="true" />
-            <element signature="e#2244#2245#0" expanded="true" />
-            <element signature="e#2282#2283#0" expanded="true" />
-            <element signature="n#!!doc;n#toString#0;n#Internship#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/mapper/CompanyMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="936">
-          <caret line="74" column="28" lean-forward="true" selection-start-line="74" selection-start-column="28" selection-end-line="74" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/mapper/InternshipMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="69" column="53" selection-start-line="69" selection-start-column="53" selection-end-line="69" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1315,6 +1145,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/mapper/StudentMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-421">
+          <caret line="35" column="58" selection-start-line="35" selection-start-column="58" selection-end-line="35" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/DTO/Curriculum/CurriculumStudentDTO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -1327,44 +1167,242 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.1.5.RELEASE/spring-core-5.1.5.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.2.17.Final/hibernate-core-5.2.17.Final.jar!/org/hibernate/collection/internal/PersistentBag.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="104" selection-start-line="104" selection-end-line="104" />
+        <state relative-caret-position="138">
+          <caret line="239" selection-start-line="239" selection-end-line="239" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/mapper/StudentMapper.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.2.17.Final/hibernate-core-5.2.17.Final.jar!/org/hibernate/collection/internal/AbstractPersistentCollection.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-421">
-          <caret line="35" column="58" selection-start-line="35" selection-start-column="58" selection-end-line="35" selection-end-column="58" />
+        <state relative-caret-position="138">
+          <caret line="970" selection-start-line="970" selection-end-line="970" />
+          <folding>
+            <element signature="e#3468#3469#0" expanded="true" />
+            <element signature="e#3506#3507#0" expanded="true" />
+            <element signature="e#34613#34614#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/mapper/InternshipMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-47">
+          <caret line="42" column="47" lean-forward="true" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/controller/InternshipController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="41" column="9" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="42" column="20" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
+          <folding>
+            <element signature="n#!!doc;n#User#0;n#User#0" />
+            <element signature="e#1783#1815#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.5.RELEASE/spring-webmvc-5.1.5.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="571" selection-start-line="571" selection-end-line="571" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.5.RELEASE/spring-web-5.1.5.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="101" selection-start-line="101" selection-end-line="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#493#494#0" expanded="true" />
+            <element signature="e#545#546#0" expanded="true" />
+            <element signature="e#627#628#0" expanded="true" />
+            <element signature="e#510#511#0" expanded="true" />
+            <element signature="e#558#559#0" expanded="true" />
+            <element signature="e#593#594#0" expanded="true" />
+            <element signature="e#637#638#0" expanded="true" />
+            <element signature="e#677#678#0" expanded="true" />
+            <element signature="e#723#724#0" expanded="true" />
+            <element signature="e#763#764#0" expanded="true" />
+            <element signature="e#809#810#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/controller/LoginUserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/mapper/CompanyMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="31" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/mapper/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="691">
+          <caret line="56" column="36" selection-start-line="56" selection-start-column="36" selection-end-line="56" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/entity/AcademicFormation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+          <folding>
+            <element signature="n#!!doc;n#AcademicFormation#0;n#AcademicFormation#0" />
+            <element signature="n#!!doc;n#toString#0;n#AcademicFormation#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/entity/Company.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="17" column="14" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#895#926#0" />
+            <element signature="e#2038#2071#0" />
+            <element signature="e#2479#2480#0" expanded="true" />
+            <element signature="e#2516#2517#0" expanded="true" />
+            <element signature="e#3484#3485#0" expanded="true" />
+            <element signature="e#3532#3533#0" expanded="true" />
+            <element signature="e#4152#4184#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/entity/Internship.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="n#!!doc;n#Internship#0;n#Internship#0" />
+            <element signature="n#!!doc;n#getIdInternship#0;n#Internship#0" />
+            <element signature="e#1366#1367#0" expanded="true" />
+            <element signature="e#1401#1402#0" expanded="true" />
+            <element signature="e#1454#1455#0" expanded="true" />
+            <element signature="e#1502#1503#0" expanded="true" />
+            <element signature="e#1540#1541#0" expanded="true" />
+            <element signature="e#1574#1575#0" expanded="true" />
+            <element signature="e#1628#1629#0" expanded="true" />
+            <element signature="e#1674#1675#0" expanded="true" />
+            <element signature="e#1721#1722#0" expanded="true" />
+            <element signature="e#1764#1765#0" expanded="true" />
+            <element signature="e#1948#1949#0" expanded="true" />
+            <element signature="e#1992#1993#0" expanded="true" />
+            <element signature="e#2167#2168#0" expanded="true" />
+            <element signature="e#2197#2198#0" expanded="true" />
+            <element signature="e#2244#2245#0" expanded="true" />
+            <element signature="e#2282#2283#0" expanded="true" />
+            <element signature="n#!!doc;n#toString#0;n#Internship#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/service/CurriculumService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="221">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#881#882#0" expanded="true" />
-            <element signature="e#1049#1050#0" expanded="true" />
-            <element signature="e#1103#1104#0" expanded="true" />
+            <element signature="e#669#670#0" expanded="true" />
+            <element signature="e#832#833#0" expanded="true" />
+            <element signature="e#884#885#0" expanded="true" />
+            <element signature="e#936#937#0" expanded="true" />
+            <element signature="e#994#995#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.1.5.RELEASE/spring-core-5.1.5.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="102" selection-start-line="102" selection-end-line="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/controller/CompanyController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-157">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Update#0;class#CompanyController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/controller/CurriculumController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="33" column="37" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/entity/Curriculum.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        <state relative-caret-position="130">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="n#!!doc;n#Curriculum#0;n#Curriculum#0" />
+            <element signature="e#1543#1544#0" expanded="true" />
             <element signature="e#1578#1579#0" expanded="true" />
+            <element signature="e#1934#1935#0" expanded="true" />
+            <element signature="e#1978#1979#0" expanded="true" />
             <element signature="n#!!doc;n#toString#0;n#Curriculum#0" />
           </folding>
         </state>
@@ -1372,18 +1410,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/mapper/CurriculumMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="70" selection-start-line="70" selection-end-line="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/dw2Backend/controller/CurriculumController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="58" column="73" lean-forward="true" selection-start-line="58" selection-start-column="73" selection-end-line="58" selection-end-column="73" />
+        <state relative-caret-position="351">
+          <caret line="118" selection-start-line="118" selection-end-line="118" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

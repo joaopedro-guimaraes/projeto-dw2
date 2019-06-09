@@ -20,7 +20,7 @@ public class UserService {
 
     public UserService() {}
 
-    public boolean Authenticate(User user){
+    public User Authenticate(User user){
         return userMapper.Authenticate(user);
     }
 
