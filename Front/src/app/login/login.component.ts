@@ -1,8 +1,11 @@
-import { LoginService } from './../core/services/login.service';
-import { LoginModel } from './../core/models/login.model';
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 import { FormGroup, FormControl } from '@angular/forms';
+import { Router } from '@angular/router';
+
+import { LoginModel } from './../core/models/login.model';
+import { UserModel } from './../core/models/user.model';
+import { LoginService } from './../core/services/login.service';
+import { UserService } from './../core/services/user.service';
 
 @Component({
   selector: 'app-login',
@@ -11,11 +14,18 @@ import { FormGroup, FormControl } from '@angular/forms';
 })
 export class LoginComponent implements OnInit {
 
-  step = 0;
+  hasError = false;
+  hasLoading = false;
   labelEmail = 'Email:';
   labelSenha = 'Senha:';
   labelButton = 'Entrar';
+  step = 0;
   title = 'Projeto DW2 - Login';
+
+  alert = {
+    type: 'danger',
+    msg: `Usúario ou senha incorreto, tente novamente`,
+  };
 
   loginForm = new FormGroup({
     'nomeUsuario': new FormControl(null),
@@ -25,10 +35,12 @@ export class LoginComponent implements OnInit {
   });
 
   login = {} as LoginModel;
+  user = {} as UserModel;
 
   constructor(
     private readonly loginService: LoginService,
     private readonly router: Router,
+    private readonly userService: UserService,
   ) { }
 
   ngOnInit() {}
@@ -43,30 +55,51 @@ export class LoginComponent implements OnInit {
 
   doLogin() {
     this.loginService.login(this.login)
-      .subscribe(res => {
-        console.log(res);
-      });
+      .subscribe(
+        res => {
+          this.user = res;
+        },
+        error => {
+          this.hasError = true;
+        },
+        () => {
+          localStorage.setItem('user', JSON.stringify(this.user));
+          this.router.navigate(['/home']);
+        }
+      );
+  }
+
+  cadastrar() {
+    this.userService.cadastrar(this.user)
+      .subscribe(
+        res => {
+          console.log(res);
+        },
+        error => {
+          this.hasError = true;
+        },
+        () => {
+          this.labelEmail = 'Email:';
+          this.labelSenha = 'Senha:';
+          this.labelButton = 'Entrar';
+          this.title = 'Projeto DW2 - Login';
+          this.step = 0;
+        }
+      );
   }
 
   onSubmit() {
     if (this.step === 0) {
-      console.log('Logica de login');
       this.login.email = this.loginForm.controls.email.value;
       this.login.password =  this.loginForm.controls.senha.value;
       this.doLogin();
-      // this.router.navigate(['home']);
     }
     if (this.step === 1) {
-      console.log('Logica de cadastrar usuario');
-      console.log(this.loginForm.controls.nomeUsuario.value);
-      console.log(this.loginForm.controls.tipoUsuario.value);
-      console.log(this.loginForm.controls.email.value);
-      console.log(this.loginForm.controls.senha.value);
-      this.labelEmail = 'Email:';
-      this.labelSenha = 'Senha:';
-      this.labelButton = 'Entrar';
-      this.title = 'Projeto DW2 - Login';
-      this.step = 0;
+      this.user.username =  this.loginForm.controls.nomeUsuario.value;
+      this.user.userType = this.loginForm.controls.tipoUsuario.value;
+      this.user.email = this.loginForm.controls.email.value;
+      this.user.password = this.loginForm.controls.senha.value;
+      this.cadastrar();
     }
   }
 

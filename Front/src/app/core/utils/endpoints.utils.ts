@@ -5,6 +5,7 @@ export const enum DataEndpoints {
 }
 
 export const enum ServiceEndpoints {
+  Cadastrar = 'usuario',
   Login = 'login',
 }
 
