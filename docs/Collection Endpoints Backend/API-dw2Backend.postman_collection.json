@@ -22,7 +22,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"username\": \"Empresa1\",\n    \"email\": \"empresa1@gmail.com\",\n    \"password\": \"123\",\n    \"userType\": \"Empresa\"\n}"
+							"raw": "{\n    \"username\": \"Aluno1\",\n    \"email\": \"aluno1@gmail.com\",\n    \"password\": \"321\",\n    \"userType\": \"Aluno\"\n}"
 						},
 						"url": {
 							"raw": "http://localhost:8080/usuario/",
@@ -290,7 +290,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n\t\"userCompany\": {\r\n    \t\"idUser\": 1\r\n\t},\r\n    \"cnpj\": \"8754236587\",\r\n    \"companyName\": \"Fofura\",\r\n\t\"address\": \"Manoela@gmail.com\",\r\n    \"number\": 842,\r\n    \"city\": \"Aluno\",\r\n\t\"neighborhood\": \"Manoela@gmail.com\",\r\n    \"state\": \"ManuMuitoFofa\",\r\n    \"cep\": \"Aluno\",\r\n\t\"telephone\": \"Manoela@gmail.com\",\r\n    \"responsible\": \"Empresa\"\r\n}"
+							"raw": "{\r\n\t\"userCompany\": {\r\n    \t\"idUser\": 1\r\n\t},\r\n    \"cnpj\": \"8754236587\",\r\n    \"companyName\": \"Hahaha\",\r\n\t\"address\": \"Manoela@gmail.com\",\r\n    \"number\": 99999,\r\n    \"city\": \"Aluno\",\r\n\t\"neighborhood\": \"Manoela@gmail.com\",\r\n    \"state\": \"ManuMuitoFofa\",\r\n    \"cep\": \"Aluno\",\r\n\t\"telephone\": \"Manoela@gmail.com\",\r\n    \"responsible\": \"Empresa\"\r\n}"
 						},
 						"url": {
 							"raw": "http://localhost:8080/empresa/",
@@ -384,7 +384,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n\t\"idCompany\": 1,\r\n\t\"userCompany\": {\r\n    \t\"idUser\": 1\r\n\t},\r\n    \"cnpj\": \"8754236587\",\r\n    \"companyName\": \"Fofura\",\r\n\t\"address\": \"Manoela@gmail.com\",\r\n    \"number\": 842,\r\n    \"city\": \"Aluno\",\r\n\t\"neighborhood\": \"Manoela@gmail.com\",\r\n    \"state\": \"ManuMuitoFofa\",\r\n    \"cep\": \"Aluno\",\r\n\t\"telephone\": \"Manoela@gmail.com\",\r\n    \"responsible\": \"Empresa\"\r\n}"
+							"raw": "{\r\n\t\"idCompany\": 2,\r\n\t\"userCompany\": {\r\n    \t\"idUser\": 1\r\n\t},\r\n    \"cnpj\": \"8754236587\",\r\n    \"companyName\": \"Fofura\",\r\n\t\"address\": \"Manoela@gmail.com\",\r\n    \"number\": 842,\r\n    \"city\": \"Aluno\",\r\n\t\"neighborhood\": \"Manoela@gmail.com\",\r\n    \"state\": \"ManuMuitoFofa\",\r\n    \"cep\": \"Aluno\",\r\n\t\"telephone\": \"Manoela@gmail.com\",\r\n    \"responsible\": \"Empresa\"\r\n}"
 						},
 						"url": {
 							"raw": "http://localhost:8080/empresa/",
@@ -395,6 +395,163 @@
 							"port": "8080",
 							"path": [
 								"empresa",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ALUNO",
+			"item": [
+				{
+					"name": "BUSCAR LISTA DE ALUNOS",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/aluno/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"aluno",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CADASTRAR ALUNO",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"userStudent\": {\r\n    \t\"idUser\": 3\r\n\t},\r\n    \"register\": \"8754236587\",\r\n    \"name\": \"Hahaha\",\r\n\t\"address\": \"Manoela@gmail.com\",\r\n    \"number\": 99999,\r\n    \"city\": \"Aluno\",\r\n\t\"neighborhood\": \"Manoela@gmail.com\",\r\n    \"state\": \"ManuMuitoFofa\",\r\n    \"cep\": \"Aluno\",\r\n\t\"telephone\": \"Manoela@gmail.com\",\r\n    \"course\": \"Empresa\",\r\n    \"dataIngresso\": \"2019-10-14\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/aluno/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"aluno",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ATUALIZAR ALUNO",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"idStudent\": 1,\r\n\t\"userStudent\": {\r\n    \t\"idUser\": 3\r\n\t},\r\n    \"register\": \"8754236587\",\r\n    \"name\": \"Hahaha\",\r\n\t\"address\": \"Manoela@gmail.com\",\r\n    \"number\": 99999,\r\n    \"city\": \"Aluno\",\r\n\t\"neighborhood\": \"Manoela@gmail.com\",\r\n    \"state\": \"ManuMuitoFofa\",\r\n    \"cep\": \"Aluno\",\r\n\t\"telephone\": \"Manoela@gmail.com\",\r\n    \"course\": \"Empresa\",\r\n    \"dataIngresso\": \"2019-10-25\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/aluno/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"aluno",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BUSCAR ALUNO PELO ID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/aluno/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"aluno",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EXCLUIR ALUNO",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"idStudent\": 3,\r\n\t\"userStudent\": {\r\n    \t\"idUser\": 3\r\n\t},\r\n    \"register\": \"8754236587\",\r\n    \"name\": \"Hahaha\",\r\n\t\"address\": \"Manoela@gmail.com\",\r\n    \"number\": 99999,\r\n    \"city\": \"Aluno\",\r\n\t\"neighborhood\": \"Manoela@gmail.com\",\r\n    \"state\": \"ManuMuitoFofa\",\r\n    \"cep\": \"Aluno\",\r\n\t\"telephone\": \"Manoela@gmail.com\",\r\n    \"course\": \"Empresa\",\r\n    \"dataIngresso\": \"2019-10-25\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/aluno/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"aluno",
 								""
 							]
 						}
@@ -561,8 +718,161 @@
 			]
 		},
 		{
-			"name": "ALUNO",
-			"item": []
+			"name": "CURRÍCULO",
+			"item": [
+				{
+					"name": "BUSCAR LISTA DE CURRÍCULOS",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/curriculo/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"curriculo",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CADASTRAR CURRÍCULO",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"idStudent\": 1,\n\t\"curriculum\":{\n\t\t\"identification\": \"Curriculum 1\",\n\t    \"academicFormationList\": { },\n\t    \"professionalExperienceList\": { }\n\t}\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/curriculo/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"curriculo",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ATUALIZAR CURRÍCULO",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"idCompany\": 12,\r\n\t\"userCompany\": {\r\n    \t\"idUser\": 1\r\n\t},\r\n    \"cnpj\": \"99999\",\r\n    \"companyName\": \"ManuMuitoFofa\",\r\n\t\"address\": \"Manoela@gmail.com\",\r\n    \"number\": 12,\r\n    \"city\": \"Aluno\",\r\n\t\"neighborhood\": \"Manoela@gmail.com\",\r\n    \"state\": \"ManuMuitoFofa\",\r\n    \"cep\": \"Aluno\",\r\n\t\"telephone\": \"Manoela@gmail.com\",\r\n    \"responsible\": \"Vai caraaaalho\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/curriculo/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"curriculo",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BUSCAR CURRÍCULO PELO ID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/curriculo/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"curriculo",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EXCLUIR CURRÍCULO",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"idCompany\": 14,\n    \"userCompany\": {\n        \"idUser\": 1,\n        \"username\": \"NOVAMENTE\",\n        \"email\": \"Manoela@gmail.com\",\n        \"password\": \"ManuMuitoFofa\",\n        \"userType\": \"Aluno\"\n    },\n    \"internshipList\": [],\n    \"companyName\": \"ManuMuitoFofa\",\n    \"address\": \"Manoela@gmail.com\",\n    \"number\": 12,\n    \"city\": \"Aluno\",\n    \"neighborhood\": \"Manoela@gmail.com\",\n    \"state\": \"ManuMuitoFofa\",\n    \"cep\": \"Aluno\",\n    \"telephone\": \"Manoela@gmail.com\",\n    \"responsible\": \"Vai caraaaalho\",\n    \"cnpj\": \"99999\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/curriculo/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"curriculo",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }

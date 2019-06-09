@@ -1,7 +1,6 @@
 package org.dw2Backend.entity;
 
 import javax.persistence.*;
-import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -14,12 +13,12 @@ public class Curriculum {
     private int idCurriculum;
 
     @Column
-    private int identification;
+    private String identification;
 
-    @ManyToMany
+    @OneToMany
     private List<AcademicFormation> academicFormationList;
 
-    @ManyToMany
+    @OneToMany
     private List<ProfessionalExperience> professionalExperienceList;
     //</editor-fold>
 
@@ -27,7 +26,7 @@ public class Curriculum {
     ////////////////////////////////
     public Curriculum(
                         int idCurriculum
-                        , int identification
+                        , String identification
                         , List<AcademicFormation> academicFormationList
                         , List<ProfessionalExperience> professionalExperienceList) {
         this.idCurriculum = idCurriculum;
@@ -49,11 +48,11 @@ public class Curriculum {
         this.idCurriculum = idCurriculum;
     }
 
-    public int getIdentification() {
+    public String getIdentification() {
         return identification;
     }
 
-    public void setIdentification(int identification) {
+    public void setIdentification(String identification) {
         this.identification = identification;
     }
 
