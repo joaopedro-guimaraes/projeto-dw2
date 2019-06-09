@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Built-By: Brayan M. Gonçalves
+Built-By: Kaleo
 Created-By: IntelliJ IDEA
 Build-Jdk: 1.8
 
