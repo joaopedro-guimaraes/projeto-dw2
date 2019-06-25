@@ -5,8 +5,8 @@ import { AlunoComponent } from './aluno.component';
 import { CadastroAlunoComponent } from './cadastro-aluno/cadastro-aluno.component';
 
 const childRoutes: Routes = [
-  { path: '', component: CurriculoComponent },
-  { path: 'cadastro', component: CadastroAlunoComponent }
+  { path: 'cadastro', component: CadastroAlunoComponent },
+  { path: 'editar', component: CurriculoComponent }
 ];
 
 const routes: Routes = [

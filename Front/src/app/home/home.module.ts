@@ -6,11 +6,9 @@ import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { MenuComponent } from './menu/menu.component';
-import { MainComponent } from './main/main.component';
-
 
 @NgModule({
-  declarations: [HomeComponent, MenuComponent, MainComponent],
+  declarations: [HomeComponent, MenuComponent],
   imports: [
     CommonModule,
     CollapseModule.forRoot(),

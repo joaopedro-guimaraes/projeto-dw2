@@ -5,6 +5,9 @@ export const enum DataEndpoints {
 }
 
 export const enum ServiceEndpoints {
+  Aluno = 'aluno',
+  Empresa = 'empresa',
+  Estagio = 'estagio',
   Cadastrar = 'usuario',
   Login = 'login',
 }

@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class AlunoComponent implements OnInit {
 
 
-  abas = '';
+  abas: any;
 
   constructor() { }
 
@@ -16,10 +16,7 @@ export class AlunoComponent implements OnInit {
   }
 
   onActivate(componentReference) {
-    console.log(componentReference);
-    componentReference.anyFunction();
     componentReference.abas.subscribe( res => this.abas = res);
-    console.log(this.abas);
   }
 
 }
