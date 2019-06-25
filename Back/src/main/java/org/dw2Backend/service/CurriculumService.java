@@ -5,10 +5,12 @@ import org.dw2Backend.entity.Curriculum;
 import org.dw2Backend.mapper.CurriculumMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
 @Service
+@Transactional
 public class CurriculumService {
 
     private CurriculumMapper curriculumMapper;

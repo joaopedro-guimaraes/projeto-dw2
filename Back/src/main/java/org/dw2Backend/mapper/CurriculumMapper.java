@@ -29,40 +29,12 @@ public class CurriculumMapper {
         this.studentMapper = studentMapper;
     }
 
-    /*public List<Curriculum> SearchAll() {
-        List<Curriculum> curriculumList = null;
-
-        try {
-            Query query = manager.createQuery("select c from Curriculum c");
-            curriculumList = query.getResultList();
-
-            for (Curriculum curriculum: curriculumList) {
-                curriculum = manager.find(Curriculum.class, curriculum.getIdCurriculum());
-
-                for (AcademicFormation academicFormation: curriculum.getAcademicFormationList()) {
-                    academicFormation.setCurriculum(null);
-                }
-            }
-
-            return curriculumList;
-        } catch (NoResultException e){
-            return curriculumList;
-        }
-    }*/
-
     public List<Curriculum> SearchAll() {
         List<Curriculum> curriculumList = null;
 
         try {
             Query query = manager.createQuery("select c from Curriculum c");
             curriculumList = query.getResultList();
-
-            for (Curriculum curriculum: curriculumList) {
-
-                for (AcademicFormation academicFormation: curriculum.getAcademicFormationList()) {
-                    academicFormation.setCurriculum(null);
-                }
-            }
 
             return curriculumList;
         } catch (NoResultException e){
@@ -116,15 +88,7 @@ public class CurriculumMapper {
                 student.setCurriculum(curriculum);
                 studentMapper.Update(student);
 
-                List<Curriculum> curriculumList = this.SearchById(student.getCurriculum().getIdCurriculum());
-
-                for (Curriculum curr: curriculumList) {
-                    for (AcademicFormation academicFormation: curr.getAcademicFormationList()) {
-                        academicFormation.setCurriculum(null);
-                    }
-
-                    curriculumResponse = curr;
-                }
+                curriculumResponse = manager.find(Curriculum.class, student.getCurriculum().getIdCurriculum());
 
                 return curriculumResponse;
             }
