@@ -8,10 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class MenuComponent implements OnInit {
 
   isCollapsed = true;
+  user;
 
   constructor() { }
 
   ngOnInit() {
+    this.user =  JSON.parse(localStorage.getItem('user'));
   }
 
 }

@@ -1,0 +1,27 @@
+<div class="col-12 p-3 background-white">
+    <form [formGroup]="vagaForm" (ngSubmit)="onSubmit()">
+      <p>Dados da Vaga</p>
+      <hr />
+
+        <div class="form-group col-12">
+          <label class="m-0">Descrição:</label>
+          <textarea type="text" class="form-control" formControlName="description" placeholder="Descrição" rows="3"></textarea>
+        </div>
+  
+        <div class="form-group col-12">
+          <label class="m-0">Requisitos obrigatórios:</label>
+          <textarea type="text" class="form-control" formControlName="requiredRequirements" placeholder="Requisitos Obrigatórios" rows="5"></textarea>
+        </div>
+  
+        <div class="form-group col-12">
+          <label class="m-0">Requisitos desejaveis:</label>
+          <textarea type="text" class="form-control" formControlName="desirableRequirements" placeholder="Requisitos Desejaveis" rows="5"></textarea>
+        </div>
+
+      <div class="col-3">
+        <button type="submit" class="btn btn-success btn-block mt-3">
+          Salvar Alterações
+        </button>
+      </div>
+    </form>
+  </div>

@@ -15,6 +15,7 @@ import org.springframework.web.context.WebApplicationContext;
 
 import java.util.List;
 
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @Scope(value = WebApplicationContext.SCOPE_REQUEST)
 public class CurriculumController {
