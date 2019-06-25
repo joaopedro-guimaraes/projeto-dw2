@@ -1,6 +1,7 @@
 package org.dw2Backend.controller;
 
 import org.dw2Backend.DTO.Curriculum.CurriculumStudentDTO;
+import org.dw2Backend.entity.AcademicFormation;
 import org.dw2Backend.entity.Curriculum;
 import org.dw2Backend.service.CurriculumService;
 
@@ -35,6 +36,13 @@ public class CurriculumController {
             return new ResponseEntity(HttpStatus.NO_CONTENT);
         }
 
+        for (Curriculum curriculum: curriculumList) {
+
+            for (AcademicFormation academicFormation: curriculum.getAcademicFormationList()) {
+                academicFormation.setCurriculum(null);
+            }
+        }
+
         return new ResponseEntity(curriculumList, HttpStatus.OK);
     }
 
@@ -50,17 +58,38 @@ public class CurriculumController {
         return new ResponseEntity(curriculumList, HttpStatus.OK);
     }
 
-    @Transactional
     @PostMapping(value = "/curriculo")
     public ResponseEntity Register(@RequestBody CurriculumStudentDTO objDTO){
         Curriculum curriculumResponse = curriculumService.Save(objDTO);
+        Curriculum curriculumResponseCopiado = new Curriculum();
 
         if(curriculumResponse != null){
+            curriculumResponseCopiado = curriculumResponse;
+            for (AcademicFormation academicFormation: curriculumResponseCopiado.getAcademicFormationList()) {
+                academicFormation.setCurriculum(null);
+            }
+
             return new ResponseEntity(curriculumResponse, HttpStatus.OK);
         }
 
         return new ResponseEntity(HttpStatus.BAD_REQUEST);
     }
+
+    /*public ResponseEntity<List<Company>> SearchAll(){
+        List<Company> companyList = companyService.SearchAll();
+
+        if(companyList.isEmpty()){
+            return new ResponseEntity(HttpStatus.NO_CONTENT);
+        }
+
+        for (Company company: companyList) {
+            for (Internship internship: company.getInternshipList()) {
+                internship.setCompany(null);
+            }
+        }
+
+        return new ResponseEntity(companyList, HttpStatus.OK);
+    }*/
 
     @Transactional
     @PutMapping(value = "/curriculo")
