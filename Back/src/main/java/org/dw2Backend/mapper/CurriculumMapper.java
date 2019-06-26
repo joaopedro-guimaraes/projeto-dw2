@@ -1,17 +1,17 @@
 package org.dw2Backend.mapper;
 
 import org.dw2Backend.DTO.Curriculum.CurriculumStudentDTO;
-import org.dw2Backend.entity.AcademicFormation;
-import org.dw2Backend.entity.Company;
-import org.dw2Backend.entity.Curriculum;
-import org.dw2Backend.entity.Student;
+import org.dw2Backend.entity.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+import sun.java2d.pipe.SpanShapeRenderer;
 
 import javax.persistence.EntityManager;
 import javax.persistence.NoResultException;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -57,6 +57,10 @@ public class CurriculumMapper {
                 for (AcademicFormation academicFormation: curr.getAcademicFormationList()) {
                     academicFormation.setCurriculum(null);
                 }
+
+                for (ProfessionalExperience professionalExperience:curr.getProfessionalExperienceList()) {
+                    professionalExperience.setCurriculum(null);
+                }
             }
 
             return curriculumList;
@@ -72,6 +76,7 @@ public class CurriculumMapper {
         try {
             List<Student> studentList = studentMapper.SearchById(objDTO.getIdStudent());
             List<AcademicFormation> academicFormationList = objDTO.getCurriculum().getAcademicFormationList();
+            List<ProfessionalExperience> professionalExperienceList = objDTO.getCurriculum().getProfessionalExperienceList();
 
             if(!studentList.isEmpty()){
 
@@ -82,6 +87,13 @@ public class CurriculumMapper {
                     }
 
                     curriculum.setAcademicFormationList(academicFormationList);
+                }
+
+                if (professionalExperienceList != null && !professionalExperienceList.isEmpty()) {
+                    for (ProfessionalExperience professionalExperience:professionalExperienceList) {
+                        professionalExperience.setCurriculum(curriculum);
+                    }
+                    curriculum.setProfessionalExperienceList(professionalExperienceList);
                 }
 
                 Student student = studentList.get(0);

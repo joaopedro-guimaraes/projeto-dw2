@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "39302fc8-139d-4f22-a72b-c9ca4cc42417",
+		"_postman_id": "f7df24c9-a6e3-44e0-975e-a2ab048d8473",
 		"name": "API-dw2Backend",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -22,7 +22,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"username\": \"Aluno1\",\n    \"email\": \"aluno1@gmail.com\",\n    \"password\": \"321\",\n    \"userType\": \"Aluno\"\n}"
+							"raw": "{\n    \"username\": \"joaopedro\",\n    \"email\": \"joaopedro@gmail.com\",\n    \"password\": \"1234\",\n    \"userType\": \"Aluno\"\n}"
 						},
 						"url": {
 							"raw": "http://localhost:8080/usuario/",
@@ -53,7 +53,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"email\": \"aluno1@gmail.com\",\n    \"password\": \"321\"\n}"
+							"raw": "{\n    \"email\": \"Manoela@hotmail.com\",\n    \"password\": \"ManuMuitoFofa\"\n}"
 						},
 						"url": {
 							"raw": "http://localhost:8080/login",
@@ -107,6 +107,10 @@
 								"type": "text"
 							}
 						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "http://localhost:8080/usuario/3",
 							"protocol": "http",
@@ -139,7 +143,7 @@
 							"raw": "{\n    \"idUser\": 1,\n    \"username\": \"BrayanGoncalves\",\n    \"email\": \"brayan.goncalves@aluno.ifsp.edu.br\",\n    \"password\": \"brayan1254\",\n    \"userType\": \"Aluno\"\n}"
 						},
 						"url": {
-							"raw": "http://localhost:8080/usuario/",
+							"raw": "http://localhost:8080/usuario/?=",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -175,7 +179,7 @@
 							"raw": "{\n    \"idUser\": 1,\n    \"username\": \"NOVAMENTE\",\n    \"email\": \"Manoela@gmail.com\",\n    \"password\": \"ManuMuitoFofa\",\n    \"userType\": \"Aluno\"\n}"
 						},
 						"url": {
-							"raw": "http://localhost:8080/usuario/",
+							"raw": "http://localhost:8080/usuario/?=",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -205,6 +209,10 @@
 					"request": {
 						"method": "GET",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "viacep.com.br/ws/13560049/json/",
 							"host": [
@@ -447,7 +455,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n\t\"userStudent\": {\r\n    \t\"idUser\": 1\r\n\t},\r\n    \"register\": \"140038x\",\r\n    \"name\": \"Brayan Matheus Gonçalves\",\r\n\t\"address\": \"Rua Doutor Pedro Raimundo\",\r\n    \"number\": 269,\r\n    \"city\": \"São Carlos\",\r\n\t\"neighborhood\": \"Vila Carmem\",\r\n    \"state\": \"SP\",\r\n    \"cep\": \"13532232\",\r\n\t\"telephone\": \"19996308548\",\r\n    \"course\": \"ADS\",\r\n    \"dataIngresso\": \"2014-01-01\"\r\n}"
+							"raw": "{\r\n\t\"userStudent\": {\r\n    \t\"idUser\": 2\r\n\t},\r\n    \"register\": \"160208x\",\r\n    \"name\": \"João Pedro\",\r\n\t\"address\": \"Rua Doutor Pedro Raimundo\",\r\n    \"number\": 269,\r\n    \"city\": \"São Carlos\",\r\n\t\"neighborhood\": \"Vila Carmem\",\r\n    \"state\": \"SP\",\r\n    \"cep\": \"13532232\",\r\n\t\"telephone\": \"19996308548\",\r\n    \"course\": \"ADS\",\r\n    \"dataIngresso\": \"2019-10-14\"\r\n}"
 						},
 						"url": {
 							"raw": "http://localhost:8080/aluno/",
@@ -761,10 +769,10 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"idStudent\": 1,\n\t\"curriculum\":{\n\t\t\"identification\": \"CV\"\n\t}\n}"
+							"raw": "{\n    \"idStudent\": 2,\n    \"curriculum\":{\n    \t\"identification\":\"CV\",\n    \t\"academicFormationList\": [{\n    \t\t\"institution\": \"IFSP\",\n    \t\t\"course\": \"TPG\",\n    \t\t\"level\": \"Superior\",\n    \t\t\"situation\": \"Cursando\"\n    \t}],\n    \t\"professionalExperienceList\":[{\n    \t\t\"company\": \"Monitora\",\n    \t\t\"function\": \"Analista\",\n    \t\t\"dateAdmission\": \"2019-02-10\",\n    \t\t\"dateDemission\": \"2019-05-10\",\n    \t\t\"executeTasks\": \"-\"\n    \t}]\n    }\n}"
 						},
 						"url": {
-							"raw": "http://localhost:8080/curriculo/",
+							"raw": "http://localhost:8080/curriculo/ abre o intellij",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -772,38 +780,7 @@
 							"port": "8080",
 							"path": [
 								"curriculo",
-								""
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "CADASTRAR CURRÍCULO (Com Formação academica e/ou Experiência profissional)",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"name": "Content-Type",
-								"type": "text",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n\t\"idStudent\": 1,\n\t\"curriculum\":{\n\t\t\"identification\": \"CV\",\n\t\t\"academicFormationList\": [{\n\t    \t\"institution\": \"IFSP\",\n\t    \t\"course\": \"Análise e Desenvolvimento de Sistemas\",\n\t    \t\"level\": \"Curso Superior\",\n\t    \t\"situation\": \"Cursando\"\n\t    }],\n    \"professionalExperienceList\": []\n\t}\n}"
-						},
-						"url": {
-							"raw": "http://localhost:8080/curriculo/",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"curriculo",
-								""
+								" abre o intellij"
 							]
 						}
 					},
@@ -823,38 +800,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"idCurriculum\": 8,\n    \"identification\": \"Currículo Vitae\",\n    \"academicFormationList\": [],\n    \"professionalExperienceList\": []\n}"
-						},
-						"url": {
-							"raw": "http://localhost:8080/curriculo/",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"curriculo",
-								""
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "ATUALIZAR CURRÍCULO (Com Formação academica e/ou Experiência profissional)",
-					"request": {
-						"method": "PUT",
-						"header": [
-							{
-								"key": "Content-Type",
-								"name": "Content-Type",
-								"type": "text",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"idCurriculum\": 10,\n    \"identification\": \"Currículo Vitae\",\n    \"academicFormationList\": [{\n    \t\"institution\": \"IFSP\",\n    \t\"course\": \"Análise e Desenvolvimento de Sistemas\",\n    \t\"level\": \"Curso Superior\",\n    \t\"situation\": \"Cursando\"\n    }],\n    \"professionalExperienceList\": []\n}"
+							"raw": "{\n    \"idCurriculum\": 13,\n    \"identification\": \"Currículo Vitae\",\n    \"academicFormationList\": [],\n    \"professionalExperienceList\": []\n}"
 						},
 						"url": {
 							"raw": "http://localhost:8080/curriculo/",
@@ -890,7 +836,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "http://localhost:8080/curriculo/7",
+							"raw": "http://localhost:8080/curriculo/13",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -898,7 +844,7 @@
 							"port": "8080",
 							"path": [
 								"curriculo",
-								"7"
+								"13"
 							]
 						}
 					},
@@ -917,7 +863,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"idStudent\": 1,\n\t\"curriculum\":{\n\t\t\"idCurriculum\": 11,\n\t    \"identification\": \"CV\",\n\t    \"academicFormationList\": [],\n\t    \"professionalExperienceList\": []\n\t}\n}"
+							"raw": "{\n\t\"idStudent\": 1,\n\t\"curriculum\":{\n\t\t\"idCurriculum\": 34,\n\t    \"identification\": \"CV\",\n\t    \"academicFormationList\": [],\n\t    \"professionalExperienceList\": []\n\t}\n}"
 						},
 						"url": {
 							"raw": "http://localhost:8080/curriculo/",
