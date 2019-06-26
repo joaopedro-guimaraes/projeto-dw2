@@ -3,6 +3,7 @@ package org.dw2Backend.controller;
 import org.dw2Backend.DTO.Curriculum.CurriculumStudentDTO;
 import org.dw2Backend.entity.AcademicFormation;
 import org.dw2Backend.entity.Curriculum;
+import org.dw2Backend.entity.ProfessionalExperience;
 import org.dw2Backend.service.CurriculumService;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,6 +43,10 @@ public class CurriculumController {
             for (AcademicFormation academicFormation: curriculum.getAcademicFormationList()) {
                 academicFormation.setCurriculum(null);
             }
+
+            for(ProfessionalExperience professionalExperience:curriculum.getProfessionalExperienceList()) {
+                professionalExperience.setCurriculum(null);
+            }
         }
 
         return new ResponseEntity(curriculumList, HttpStatus.OK);
@@ -68,6 +73,10 @@ public class CurriculumController {
             curriculumResponseCopiado = curriculumResponse;
             for (AcademicFormation academicFormation: curriculumResponseCopiado.getAcademicFormationList()) {
                 academicFormation.setCurriculum(null);
+            }
+
+            for(ProfessionalExperience professionalExperience:curriculumResponseCopiado.getProfessionalExperienceList()) {
+                professionalExperience.setCurriculum(null);
             }
 
             return new ResponseEntity(curriculumResponse, HttpStatus.OK);

@@ -1,5 +1,7 @@
 package org.dw2Backend.entity;
 
+import org.hibernate.annotations.Type;
+
 import javax.persistence.*;
 import java.util.Date;
 
@@ -22,9 +24,11 @@ public class ProfessionalExperience {
     @Column
     private String function;
 
+    @Type(type = "date")
     @Column
     private Date dateAdmission;
 
+    @Type(type = "date")
     @Column
     private Date dateDemission;
 
