@@ -15,7 +15,7 @@
             [ngClass]="(isCollapsed) ? 'fa-chevron-down' : 'fa-chevron-up'"></i>
         </div>
         <div id="collapseBasic" [collapse]="isCollapsed">
-          <a class="nav-link active" [routerLink]="['aluno']">Curriculo</a>
+          <a class="nav-link active" [routerLink]="['aluno/curriculo']">Curriculo</a>
           <a class="nav-link active">Vagas</a>
           <a class="nav-link active" [routerLink]="['aluno/cadastro']">Cadastro</a>
           <a class="nav-link active">Relatórios</a>
@@ -27,9 +27,9 @@
             [ngClass]="(isCollapsed) ? 'fa-chevron-down' : 'fa-chevron-up'"></i>
         </div>
         <div id="collapseBasic" [collapse]="isCollapsed">
-          <a class="nav-link active" [routerLink]="['aluno']">Curriculo</a>
-          <a class="nav-link active">Vagas</a>
-          <a class="nav-link active" [routerLink]="['aluno/cadastro']">Cadastro</a>
+          <a class="nav-link active">Alunos</a>
+          <a class="nav-link active">Empresas</a>
+          <a class="nav-link active">Supervisores</a>
           <a class="nav-link active">Relatórios</a>
         </div>
       </div>
@@ -49,10 +49,8 @@
             [ngClass]="(isCollapsed) ? 'fa-chevron-down' : 'fa-chevron-up'"></i>
         </div>
         <div id="collapseBasic" [collapse]="isCollapsed">
-          <a class="nav-link active" [routerLink]="['aluno']">Curriculo</a>
-          <a class="nav-link active">Vagas</a>
-          <a class="nav-link active" [routerLink]="['aluno/cadastro']">Cadastro</a>
-          <a class="nav-link active">Relatórios</a>
+          <a class="nav-link active">Alunos</a>
+          <a class="nav-link active">Estagios</a>
         </div>
       </div>
     </ng-container>

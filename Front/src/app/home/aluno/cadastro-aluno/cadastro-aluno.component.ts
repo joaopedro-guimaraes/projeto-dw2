@@ -41,19 +41,6 @@ export class CadastroAlunoComponent implements OnInit {
 
   ngOnInit() {
     this.user =  JSON.parse(localStorage.getItem('user'));
-    this.abas.emit({
-      'abas' : [
-        {
-          nome : 'Visualizar',
-          router : 'cadastro',
-        },
-        {
-          nome : 'Editar',
-          router : 'editar',
-        }
-      ]
-    });
-
     this.utilsService.getCidadesEstados().subscribe(res => {
       this.estadosCidades = res;
     });

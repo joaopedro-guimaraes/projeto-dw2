@@ -6,9 +6,13 @@ export const enum DataEndpoints {
 
 export const enum ServiceEndpoints {
   Aluno = 'aluno',
+  GetAluno = 'aluno/{{0}}',
   Empresa = 'empresa',
+  GetEmpresa = 'empresa/{{0}}',
   Estagio = 'estagio',
+  GetEstagio = 'estagio/{{0}}',
   Cadastrar = 'usuario',
+  Curriculo = 'curriculo',
   Login = 'login',
 }
 

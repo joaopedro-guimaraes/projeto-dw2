@@ -12,4 +12,11 @@ export class AlunoService {
     return this.httpClient.post(serviceEndpoints(ServiceEndpoints.Aluno), cadastro) as Observable<any>;
   }
 
+  getAluno(id: any): Observable<any> {
+    return this.httpClient.get(serviceEndpoints(ServiceEndpoints.GetAluno, id)) as Observable<any>;
+  }
+
+  curriculo(curriculo: any) {
+    return this.httpClient.post(serviceEndpoints(ServiceEndpoints.Curriculo), curriculo) as Observable<any>;
+  }
 }

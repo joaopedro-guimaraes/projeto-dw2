@@ -1,3 +1,139 @@
-<p>
-  curriculo works!
-</p>
+<div class="col-12 p-3 background-white text-center">
+
+  <ng-container *ngIf="view">
+    <h1>{{ dados.name }}</h1>
+    <hr>
+    <p>{{ dados.address }}, {{ dados.number }}, {{ dados.neighborhood }} - {{dados.city}}, {{dados.state}}</p>
+    <p>Contato: {{ dados.telephone }}</p>
+  </ng-container>
+
+  <hr>
+
+  <h2>Formação Academica</h2>
+
+  <ng-container *ngIf="curriculum.curriculum.academicFormationList.length">
+    <ng-container *ngFor="let academic of curriculum.curriculum.academicFormationList">
+
+      <p>{{ academic.institution }}<p>
+          <p>{{ academic.course }} - {{ academic.level }}</p>
+          <p>{{ academic.situation }}</p>
+
+    </ng-container>
+  </ng-container>
+
+
+  <div class="row justify-content-center mb-3">
+    <div class="col-6">
+      <button type="button" class="btn btn-success btn-block mt-3" (click)="curriculo()">
+        Adicionar
+      </button>
+    </div>
+  </div>
+
+
+  <form class="text-left" [formGroup]="curriculoForm" (ngSubmit)="onSubmit()" *ngIf="flagCurriculo">
+
+    <h3>Adicionar Formação Academica</h3>
+
+    <div class="row">
+      <div class="form-group col-12">
+        <label class="m-0">Instituição:</label>
+        <input type="tel" class="form-control" formControlName="institution" placeholder="Instituição" />
+      </div>
+
+      <div class="form-group col-12">
+        <label class="m-0">Curso:</label>
+        <input type="tel" class="form-control" formControlName="course" placeholder="Curso" />
+      </div>
+
+      <div class="form-group col-12">
+        <label class="m-0">Nivel:</label>
+        <input type="tel" class="form-control" formControlName="level" placeholder="Superior, Técnico, Livre" />
+      </div>
+
+      <div class="form-group col-12">
+        <label class="m-0">Situação:</label>
+        <input type="tel" class="form-control" formControlName="situation"
+          placeholder="Cursando, Completo, Incompleto" />
+      </div>
+
+      <div class="col-6">
+        <button type="submit" class="btn btn-success btn-block mt-3">
+          Salvar
+        </button>
+      </div>
+    </div>
+
+  </form>
+
+  <hr>
+
+  <h2>Experiencia Professional</h2>
+
+  <ng-container *ngIf="curriculum.curriculum.professionalExperienceList.length">
+    <ng-container *ngFor="let professional of curriculum.curriculum.professionalExperienceList">
+
+      <p>{{ professional.company }}<p>
+          <p>{{ professional.function }}</p>
+          <p>{{ professional.dateAdmission }} - {{ professional.dateDemission }}</p>
+          <p>{{ professional.executeTasks }}</p>
+
+    </ng-container>
+  </ng-container>
+
+  <div class="row justify-content-center mb-3">
+    <div class="col-6">
+      <button type="button" class="btn btn-success btn-block mt-3" (click)="professional()">
+        Adicionar
+      </button>
+    </div>
+  </div>
+
+  <form class="text-left" [formGroup]="professionalForm" (ngSubmit)="onSubmitProfessional()" *ngIf="flagProfessional">
+
+    <h3>Adicionar Experiencia Profissional</h3>
+
+    <div class="row">
+      <div class="form-group col-12">
+        <label class="m-0">Empresa:</label>
+        <input type="tel" class="form-control" formControlName="company" placeholder="Empresa" />
+      </div>
+
+      <div class="form-group col-12">
+        <label class="m-0">Função:</label>
+        <input type="tel" class="form-control" formControlName="function" placeholder="Função" />
+      </div>
+
+      <div class="form-group col-6">
+        <label class="m-0">Data admissão:</label>
+        <input type="date" class="form-control" formControlName="dateAdmission" placeholder="Data admissão" />
+      </div>
+
+      <div class="form-group col-6">
+        <label class="m-0">Data demissão:</label>
+        <input type="date" class="form-control" formControlName="dateDemission" placeholder="Data demissão" />
+      </div>
+
+      <div class="form-group col-12">
+        <label class="m-0">Tarefas:</label>
+        <input type="tel" class="form-control" formControlName="executeTasks" placeholder="Tarefas" />
+      </div>
+
+      <div class="col-6">
+        <button type="submit" class="btn btn-success btn-block mt-3">
+          Adicionar
+        </button>
+      </div>
+    </div>
+
+  </form>
+
+  <div class="row justify-content-center mb-3">
+    <div class="col-12">
+      <button type="button" class="btn btn-success btn-block mt-3" (click)="salvarTudo()">
+        Salvar Curriculo
+      </button>
+    </div>
+  </div>
+
+</div>

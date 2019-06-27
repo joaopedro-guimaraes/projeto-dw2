@@ -14,3 +14,27 @@ export interface CadastroModel {
     course: string;
     dataIngresso: string;
 }
+
+export interface CurriculoModel {
+    idStudent: number,
+    curriculum: {
+        identification: string,
+        academicFormationList: Academic[],
+        professionalExperienceList: Professional[]
+    }
+}
+
+export interface Academic {
+    institution: string,
+    course: string,
+    level: string,
+    situation: string
+}
+
+export interface Professional {
+    company: string,
+    function: string,
+    dateAdmission: string,
+    dateDemission: string,
+    executeTasks: string
+}

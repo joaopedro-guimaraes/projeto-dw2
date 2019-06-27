@@ -1,10 +1,1 @@
-<ng-container *ngIf="hiddenAbas">
-  <ul class="nav nav-tabs">
-    <ng-container *ngFor="let aba of abas.abas">
-      <li class="nav-item">
-        <a class="nav-link active" [routerLink]="[aba.router]">{{ aba.nome }}</a>
-      </li>
-    </ng-container>
-  </ul>
-</ng-container>
-<router-outlet (activate)="onActivate($event)"></router-outlet>
+<router-outlet></router-outlet>

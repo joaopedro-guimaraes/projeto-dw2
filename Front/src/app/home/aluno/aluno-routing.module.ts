@@ -6,7 +6,7 @@ import { CadastroAlunoComponent } from './cadastro-aluno/cadastro-aluno.componen
 
 const childRoutes: Routes = [
   { path: 'cadastro', component: CadastroAlunoComponent },
-  { path: 'editar', component: CurriculoComponent }
+  { path: 'curriculo', component: CurriculoComponent }
 ];
 
 const routes: Routes = [
