@@ -1,0 +1,58 @@
+<nav class="navbar d-flex justify-content-center">
+  <div class="nav flex-column">
+    <a class="navbar-brand text-center" href="">Projeto DW2</a>
+
+    <div class="my-3 align-items-center">
+      <i class="fas fa-user"></i>
+      <p class="pl-2 d-inline">{{ user.username }}</p>
+      <hr />
+    </div>
+
+    <ng-container [ngSwitch]="user.userType">
+      <div class="mt-2" *ngSwitchCase="'Aluno'">
+        <div (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseBasic">
+          <p class="d-inline">Aluno</p><i class="fas pl-2"
+            [ngClass]="(isCollapsed) ? 'fa-chevron-down' : 'fa-chevron-up'"></i>
+        </div>
+        <div id="collapseBasic" [collapse]="isCollapsed">
+          <a class="nav-link active" [routerLink]="['aluno/curriculo']">Curriculo</a>
+          <a class="nav-link active">Vagas</a>
+          <a class="nav-link active" [routerLink]="['aluno/cadastro']">Cadastro</a>
+          <a class="nav-link active">Relatórios</a>
+        </div>
+      </div>
+      <div class="mt-2" *ngSwitchCase="'Administrador'">
+        <div (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseBasic">
+          <p class="d-inline">Administrador</p><i class="fas pl-2"
+            [ngClass]="(isCollapsed) ? 'fa-chevron-down' : 'fa-chevron-up'"></i>
+        </div>
+        <div id="collapseBasic" [collapse]="isCollapsed">
+          <a class="nav-link active">Alunos</a>
+          <a class="nav-link active">Empresas</a>
+          <a class="nav-link active">Supervisores</a>
+          <a class="nav-link active">Relatórios</a>
+        </div>
+      </div>
+      <div class="mt-2" *ngSwitchCase="'Empresa'">
+        <div (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseBasic">
+          <p class="d-inline">Empresa</p><i class="fas pl-2"
+            [ngClass]="(isCollapsed) ? 'fa-chevron-down' : 'fa-chevron-up'"></i>
+        </div>
+        <div id="collapseBasic" [collapse]="isCollapsed">
+          <a class="nav-link active" [routerLink]="['empresa/vaga']">Vagas</a>
+          <a class="nav-link active" [routerLink]="['empresa/cadastro']">Cadastro</a>
+        </div>
+      </div>
+      <div class="mt-2" *ngSwitchCase="'Supervisor'">
+        <div (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseBasic">
+          <p class="d-inline">Supervisor</p><i class="fas pl-2"
+            [ngClass]="(isCollapsed) ? 'fa-chevron-down' : 'fa-chevron-up'"></i>
+        </div>
+        <div id="collapseBasic" [collapse]="isCollapsed">
+          <a class="nav-link active">Alunos</a>
+          <a class="nav-link active">Estagios</a>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</nav>

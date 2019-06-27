@@ -1,0 +1,10 @@
+@import '../../sass/variables.scss';
+
+.card {
+  color: azure;
+  background-color: $gray-background-card;
+}
+
+.card-header {
+  border-bottom: 0;
+}
